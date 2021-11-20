@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-20T23:39:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이것저것 코딩개발 일기</title><subtitle>코딩을 하면서 몰랐거나 배웠던것을 채워가는 블로그입니다.</subtitle><author><name>LATIsi</name></author><entry><title type="html">개발 목표 관련</title><link href="http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject/" rel="alternate" type="text/html" title="개발 목표 관련" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject</id><content type="html" xml:base="http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject/">&lt;p&gt;올해 대학교를 졸업하고나서 10월 중 후반부터 본격적인 프런트공부를 하기 시작했다!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-21T00:50:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이것저것 코딩개발 일기</title><subtitle>코딩을 하면서 몰랐거나 배웠던것을 채워가는 블로그입니다.</subtitle><author><name>LATIsi</name></author><entry><title type="html">개발 목표 관련</title><link href="http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject/" rel="alternate" type="text/html" title="개발 목표 관련" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject</id><content type="html" xml:base="http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject/">&lt;p&gt;올해 대학교를 졸업하고나서 10월 중 후반부터 본격적인 프런트공부를 하기 시작했다!&lt;/p&gt;
 
 &lt;p&gt;왜냐면 나는 그림그리는 것을 굉장히 좋아한다.&lt;br /&gt;
-오죽하면 중고딩때 매일 그림공책을 들고다녔겠나… 건물을 따라그리는것도 크로키하는것도 좋아했고.&lt;br /&gt;
-그때문인가 고등학교도 디자인학과를 들어가 그때 웹디자인도 처음으로 해봤다.&lt;/p&gt;
+오죽하면 중고딩때 매일 그림공책을 들고 건물을 따라 그리거나 크로키 하는 것도 좋아했고.&lt;br /&gt;
+그때문인가 고등학교도 디자인학과에 들어가서 그때 웹디자인도 처음으로 해봤다.&lt;/p&gt;
 
 &lt;p&gt;근데 디자인만으로 만족 못하고 그 안의 기능도 내 스스로 개발하고 싶은걸 어떻게 하라는건지 ;(&lt;br /&gt;
 특히 앱개발을 너무너무너무너무 하고싶었다.&lt;/p&gt;
@@ -11,20 +11,24 @@
 
 &lt;p&gt;그래서 대학교 진로도 앱개발쪽으로 틀었다.&lt;/p&gt;
 
-&lt;p&gt;1학년때는 c언어, 2학년때는 JAVA로 본격적인 안드로이드 앱 개발을 배우며 자료구조 / DB sql도 이 쯔음에서야 배웠다.&lt;br /&gt;
-어플을 기획/개발하며 팀프로젝트를 하는데 문제는 정작 UX/UI관련해서는 어떤 툴을 써야하고, 공유는 어떻게하며… 어떤 디자인이 요새 트렌드인지를 하나도 몰랐던것이다.&lt;br /&gt;
+&lt;p&gt;1학년때는 c언어, 2학년때는 JAVA로 본격적인 안드로이드 앱 개발을 배우며&lt;br /&gt;
+자료구조 / DB sql도 이 쯔음에서야 배웠다.&lt;br /&gt;
+어플을 기획/개발하며 팀프로젝트를 하는데 문제는 정작 UX/UI관련해서는 어떤 툴을 써야하고,&lt;br /&gt;
+공유는 어떻게하며… 어떤 디자인이 요새 트렌드인지를 하나도 몰랐던것이다.&lt;br /&gt;
 그래도 맨땅에 헤딩으로 어찌저찌 열심히 디자인했다.&lt;br /&gt;
 &lt;del&gt;지금 보면 와 진짜 구리다… 라는 말이 나올정도로 처참하다 정말로…&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;일단 팀원들이 확인해봐야하니 구글 프레젠테이션으로 스토리보드를 디자인해보고&lt;br /&gt;
-(지금 생각하면 진짜 할짓이 안되는구나… 싶음)&lt;br /&gt;
-기획부분에서도 많이 엇갈리는 부분도 많아 정작 학기안에 개발을 못해 흐지부지된 프로젝트도 많았다.&lt;/p&gt;
+&lt;p&gt;모두가 확인할수있는 디자인 공유툴을 몰랐다, 일단 팀원들이 확인해봐야하니 구글 프레젠테이션으로 스토리보드를 디자인하고. (지금 생각하면 진짜 할 짓이 안되는구나… 싶음)&lt;br /&gt;
+기획부분에서도 많이 엇갈리는 부분도 많아 정작 학기안에 개발을 못한 프로젝트도 많았다.&lt;/p&gt;
 
 &lt;p&gt;3학년 쯔음에서야 실무관련으로 배웠다.&lt;br /&gt;
-…음.. 주로 myphpAdmin과 관련해서. php와 서버, 안드로이드와 json관련으로 공부를 꽤 한것같다. 리눅스 가상서버도 배우고 알차게 보냈다. 특히 졸작으로 이력서/구인글 관련 앱을 완성도 있게 만들었지만 출시까지는 못해 안타까웠다.&lt;br /&gt;
+…음.. 주로 myphpAdmin과 관련해서, php와 서버, 안드로이드의 리스트뷰와 리사이클러뷰,&lt;br /&gt;
+json관련으로 데이터를 REST api로 POST,GET,PUT으로 어떻게 주고받는지에 대한 공부를 파고들었다.&lt;br /&gt;
+더불어 리눅스 가상서버도 배우고 알차게 보냈다.&lt;br /&gt;
+특히 졸작으로 이력서/구인글 관련 앱을 완성도 있게 만들었지만 출시까지는 못해 안타까웠다.&lt;br /&gt;
 서버도 기한이 지나 날라가버려 눈물남…&lt;/p&gt;
 
-&lt;p&gt;특히 기획을 배웠던게 기억나는데&lt;br /&gt;
+&lt;p&gt;특히 어플 기획을 배웠던게 기억나는데&lt;br /&gt;
 아니 교수님~~? ppt로 앱의 기획서를 짜라고요? 
 예? 이걸 제가요? 까짓거 함 해보겠습니다!! 하고 달려들었다&lt;/p&gt;
 
@@ -41,10 +45,10 @@
 
 &lt;p&gt;아무튼 주저리주저리 다 내뱉고 나자면!&lt;br /&gt;
 대학교때 내가 배우던것들은 주로 안드로이드 스튜디오- php- JAVA나 sql같은 DB관련이라&lt;br /&gt;
-프론트 관련으로 꼭 배우면 좋다는 node.js, 리엑트, JS공부를 하기위해 JS와 react관련으로 toy프로젝트를 만들려고 한다.&lt;br /&gt;
+프런트 관련으로 꼭 배우면 좋다는 node.js, 리엑트, JS공부를 하기위해 JS와 react관련으로 toy프로젝트를 만들려고 한다.&lt;br /&gt;
 둘다 꽤 익숙해진다면 react-native 관련해 공부해 프로젝트를 만들어보고싶다.&lt;/p&gt;
 
-&lt;h5 id=&quot;특히-웹에-있는-클론코딩같은것이라도-차근차근-따라해가면서-내가-원하는-기능을-추가해가는걸-목표로-하고있다&quot;&gt;특히, 웹에 있는 클론코딩같은것이라도 차근차근 따라해가면서 내가 원하는 기능을 추가해가는걸 목표로 하고있다!&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;특히, 웹에 있는 클론코딩이라도 천천히 따라해가면서 내가 원하는 기능을 추가해가는걸 목표로 하고있다!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;react-관련&quot;&gt;React 관련&lt;/h3&gt;
 
@@ -87,24 +91,8 @@
 
 &lt;/div&gt;
 
-&lt;h3 id=&quot;그-외에&quot;&gt;그 외에&lt;/h3&gt;
-&lt;div class=&quot;notice--primary&quot;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;블로그 개발
-      &lt;ul&gt;
-        &lt;li&gt;카테고리를 만들자.&lt;/li&gt;
-        &lt;li&gt;폰트 디자인, 크기 수정&lt;/li&gt;
-        &lt;li&gt;디자인 조금 수정해야할듯?&lt;/li&gt;
-        &lt;li&gt;수정할것이 아직 산더미다~!&lt;/li&gt;
-        &lt;li&gt;github 페이지 privite으로… 월별 결제 내년부터 하자!&lt;/li&gt;
-        &lt;li&gt;Google Analytics 등록해보기?&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
 &lt;p&gt;추후에도 추가할 예정이다.
-배울게많으니까 차근차근 쌓아가며 개발하자!&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="일상" /><summary type="html">꽤 긴 주저리들과 하고싶은 간단한 toy 프로젝트들, 블로그 개선점 정리</summary></entry><entry><title type="html">JS 객체 관련 with , in에 대하여</title><link href="http://localhost:4000/post/javascript/JS-object-with,in/" rel="alternate" type="text/html" title="JS 객체 관련 with , in에 대하여" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/javascript/JS-object-with,in</id><content type="html" xml:base="http://localhost:4000/post/javascript/JS-object-with,in/">&lt;p&gt;JS 공부를 하다가  with과 in 관련해서 정리를 해두려고 한다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="JavaScript" /></entry><entry><title type="html">git 명령어 정리</title><link href="http://localhost:4000/post/git/git-command/" rel="alternate" type="text/html" title="git 명령어 정리" /><published>2021-11-19T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/git/git-command</id><content type="html" xml:base="http://localhost:4000/post/git/git-command/">&lt;ul&gt;
+배울게많으니까 차근차근 쌓아가며 개발하자!&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="일상" /><summary type="html">꽤 긴 주저리들과 하고싶은 간단한 toy 프로젝트들</summary></entry><entry><title type="html">JS 객체 관련 with , in에 대하여</title><link href="http://localhost:4000/post/javascript/JS-object-with,in/" rel="alternate" type="text/html" title="JS 객체 관련 with , in에 대하여" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/javascript/JS-object-with,in</id><content type="html" xml:base="http://localhost:4000/post/javascript/JS-object-with,in/">&lt;p&gt;JS 공부를 하다가  with과 in 관련해서 정리를 해두려고 한다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="JavaScript" /></entry><entry><title type="html">git 명령어 정리</title><link href="http://localhost:4000/post/git/git-command/" rel="alternate" type="text/html" title="git 명령어 정리" /><published>2021-11-19T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/git/git-command</id><content type="html" xml:base="http://localhost:4000/post/git/git-command/">&lt;ul&gt;
   &lt;li&gt;추후 추가되는 글입니다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -231,4 +219,20 @@ last_modified_at :         # 수정일
 &amp;lt;p&amp;gt; 효과(문단) - p효과를 줄 문단 위 아래 엔터키
 취소선 효과 - ~~  쓸 글  ~~
 H1 같이 강조 효과 - # ## ###  (숫자가 늘어날때마다 #수가 더 늘어남.)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="blog" /><summary type="html">기록방법 정리 / 오류 정리!</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;그-외에&quot;&gt;그 외에&lt;/h3&gt;
+&lt;div class=&quot;notice--primary&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;블로그 개발
+      &lt;ul&gt;
+        &lt;li&gt;카테고리를 만들자.&lt;/li&gt;
+        &lt;li&gt;폰트 디자인, 크기 수정&lt;/li&gt;
+        &lt;li&gt;디자인 조금 수정해야할듯?&lt;/li&gt;
+        &lt;li&gt;수정할것이 아직 산더미다~!&lt;/li&gt;
+        &lt;li&gt;github 페이지 privite으로… 월별 결제 내년부터 하자!&lt;/li&gt;
+        &lt;li&gt;Google Analytics 등록해보기?&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="blog" /><summary type="html">기록방법 정리 / 오류 정리와 목표.</summary></entry></feed>

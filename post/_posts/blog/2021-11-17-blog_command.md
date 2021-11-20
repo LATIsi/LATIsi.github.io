@@ -1,6 +1,6 @@
 ---
 title: "jekyll 블로그 제작관련 기록"
-excerpt: " 기록방법 정리 / 오류 정리!"
+excerpt: " 기록방법 정리 / 오류 정리와 목표."
 date: 2021-11-17
 categories: blog
 last_modified_at : 2021-11-20
@@ -35,5 +35,16 @@ last_modified_at : 2021-11-20
     <p> 효과(문단) - p효과를 줄 문단 위 아래 엔터키
     취소선 효과 - ~~  쓸 글  ~~
     H1 같이 강조 효과 - # ## ###  (숫자가 늘어날때마다 #수가 더 늘어남.)
+
+### 그 외에
+<div class="notice--primary" markdown="1">
+- 블로그 개발
+    - 카테고리를 만들자.
+    - 폰트 디자인, 크기 수정
+    - 디자인 조금 수정해야할듯?
+    - 수정할것이 아직 산더미다~!
+    - github 페이지 privite으로... 월별 결제 내년부터 하자!
+    - Google Analytics 등록해보기?
+</div>
 
 
