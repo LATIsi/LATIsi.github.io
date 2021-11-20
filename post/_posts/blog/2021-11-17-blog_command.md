@@ -1,0 +1,39 @@
+---
+title: "jekyll 블로그 제작관련 기록"
+excerpt: " 기록방법 정리 / 오류 정리!"
+date: 2021-11-17
+categories: blog
+last_modified_at : 2021-11-20
+---
+* 추후 추가되는 글입니다.
+
+### 로컬서버 구동 할 때!  
+    cmd에서  
+    bundle exec jekyll serve  
+    으로 로컬 서버에서 구동확인
+
+---
+
+### 구동했을시 관련 오류.  
+    -- cannot load such file -- webrick 오류가 나서 bundle add webrick을 설치한뒤  
+    다시 bundle exec jekyll serve 실행.  
+    참고 글 : https://junho85.pe.kr/1850  
+
+---
+
+### 블로그 글 작성시 작성 방법!
+    title:                     # 제목
+    excerpt:                   # 글의 설명 
+    date:                      # 작성일 
+    categories:                # 카테고리 지정
+    last_modified_at :         # 수정일
+
+---
+
+### 블로그 글 작성 마크다운!   
+    줄바꿈 - 라인의 마지막 줄에 스페이스바 두번.
+    <p> 효과(문단) - p효과를 줄 문단 위 아래 엔터키
+    취소선 효과 - ~~  쓸 글  ~~
+    H1 같이 강조 효과 - # ## ###  (숫자가 늘어날때마다 #수가 더 늘어남.)
+
+

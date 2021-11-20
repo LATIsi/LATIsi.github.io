@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-20T23:39:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이것저것 코딩개발 일기</title><subtitle>코딩을 하면서 몰랐거나 배웠던것을 채워가는 블로그입니다.</subtitle><author><name>LATIsi</name></author><entry><title type="html">개발 목표 관련</title><link href="http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject/" rel="alternate" type="text/html" title="개발 목표 관련" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject</id><content type="html" xml:base="http://localhost:4000/post/%EC%9D%BC%EC%83%81/toyproject/">&lt;p&gt;올해 대학교를 졸업하고나서 10월 중 후반부터 본격적인 프런트공부를 하기 시작했다!&lt;/p&gt;
+
+&lt;p&gt;왜냐면 나는 그림그리는 것을 굉장히 좋아한다.&lt;br /&gt;
+오죽하면 중고딩때 매일 그림공책을 들고다녔겠나… 건물을 따라그리는것도 크로키하는것도 좋아했고.&lt;br /&gt;
+그때문인가 고등학교도 디자인학과를 들어가 그때 웹디자인도 처음으로 해봤다.&lt;/p&gt;
+
+&lt;p&gt;근데 디자인만으로 만족 못하고 그 안의 기능도 내 스스로 개발하고 싶은걸 어떻게 하라는건지 ;(&lt;br /&gt;
+특히 앱개발을 너무너무너무너무 하고싶었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;간지나잖아 앱개발하는거!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;그래서 대학교 진로도 앱개발쪽으로 틀었다.&lt;/p&gt;
+
+&lt;p&gt;1학년때는 c언어, 2학년때는 JAVA로 본격적인 안드로이드 앱 개발을 배우며 자료구조 / DB sql도 이 쯔음에서야 배웠다.&lt;br /&gt;
+어플을 기획/개발하며 팀프로젝트를 하는데 문제는 정작 UX/UI관련해서는 어떤 툴을 써야하고, 공유는 어떻게하며… 어떤 디자인이 요새 트렌드인지를 하나도 몰랐던것이다.&lt;br /&gt;
+그래도 맨땅에 헤딩으로 어찌저찌 열심히 디자인했다.&lt;br /&gt;
+&lt;del&gt;지금 보면 와 진짜 구리다… 라는 말이 나올정도로 처참하다 정말로…&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;일단 팀원들이 확인해봐야하니 구글 프레젠테이션으로 스토리보드를 디자인해보고&lt;br /&gt;
+(지금 생각하면 진짜 할짓이 안되는구나… 싶음)&lt;br /&gt;
+기획부분에서도 많이 엇갈리는 부분도 많아 정작 학기안에 개발을 못해 흐지부지된 프로젝트도 많았다.&lt;/p&gt;
+
+&lt;p&gt;3학년 쯔음에서야 실무관련으로 배웠다.&lt;br /&gt;
+…음.. 주로 myphpAdmin과 관련해서. php와 서버, 안드로이드와 json관련으로 공부를 꽤 한것같다. 리눅스 가상서버도 배우고 알차게 보냈다. 특히 졸작으로 이력서/구인글 관련 앱을 완성도 있게 만들었지만 출시까지는 못해 안타까웠다.&lt;br /&gt;
+서버도 기한이 지나 날라가버려 눈물남…&lt;/p&gt;
+
+&lt;p&gt;특히 기획을 배웠던게 기억나는데&lt;br /&gt;
+아니 교수님~~? ppt로 앱의 기획서를 짜라고요? 
+예? 이걸 제가요? 까짓거 함 해보겠습니다!! 하고 달려들었다&lt;/p&gt;
+
+&lt;p&gt;앱에 ##한 기능 있으면 좋겠다~! 하고 열정이 넘쳐 60장 넘기게 기획하다&lt;br /&gt;
+너무 기능이 많아 필요한 기능만 심플하게 남기는 경험도 해보고…&lt;br /&gt;
+그래도 기획하며 디자인하는거 은근 재미있었으니까 좋은경험이었다.&lt;/p&gt;
+
+&lt;p&gt;그런데 이런 경험들이 있어서 그런가&lt;/p&gt;
+&lt;h3 id=&quot;무언가를-개발할때-먼저-기획하고-디자인하는게-버릇이-들어버리고만-것&quot;&gt;무언가를 개발할때 먼저 기획하고 디자인하는게 버릇이 들어버리고만 것!&lt;/h3&gt;
+
+&lt;p&gt;작년쯤에서야 UX/UI쪽으로 포토샵에 zepiln 플러그인을 사용해 다루다가 최근 쓰기 편해보이는 figma를 사용하기 시작했다. 어도비XD도 좋은것같은데, 이건 나중에 내가 실무에 익숙해지면 다루고싶다.&lt;br /&gt;
+배울게 너무 많다!!&lt;br /&gt;
+이것도 하고싶고 저것도 하고싶고 &lt;del&gt;헉ㅎ헉헉헉너무많아!!!&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;아무튼 주저리주저리 다 내뱉고 나자면!&lt;br /&gt;
+대학교때 내가 배우던것들은 주로 안드로이드 스튜디오- php- JAVA나 sql같은 DB관련이라&lt;br /&gt;
+프론트 관련으로 꼭 배우면 좋다는 node.js, 리엑트, JS공부를 하기위해 JS와 react관련으로 toy프로젝트를 만들려고 한다.&lt;br /&gt;
+둘다 꽤 익숙해진다면 react-native 관련해 공부해 프로젝트를 만들어보고싶다.&lt;/p&gt;
+
+&lt;h5 id=&quot;특히-웹에-있는-클론코딩같은것이라도-차근차근-따라해가면서-내가-원하는-기능을-추가해가는걸-목표로-하고있다&quot;&gt;특히, 웹에 있는 클론코딩같은것이라도 차근차근 따라해가면서 내가 원하는 기능을 추가해가는걸 목표로 하고있다!&lt;/h5&gt;
+
+&lt;h3 id=&quot;react-관련&quot;&gt;React 관련&lt;/h3&gt;
+
+&lt;div class=&quot;notice--primary&quot;&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;to-do list
+      &lt;ul&gt;
+        &lt;li&gt;2021.11.20일 기준.
+          &lt;ul&gt;
+            &lt;li&gt;좀 매트하게 디자인하고싶었다.&lt;/li&gt;
+            &lt;li&gt;wow, 이건 내가 원하던 대로의 웹 디자인과 투두리스트- 날짜조회, 할일 갯수, 추가, 삭제까지 완성했다!&lt;/li&gt;
+            &lt;li&gt;그래도 반응형 모바일 디자인까지 놓칠수없지..!! 꼭 만들고 싶어서 불타오르지만 css 관련해서 좀 더 공부하고 개발하고싶다.&lt;/li&gt;
+            &lt;li&gt;더불어서 to-do list의 목록들을 각각 컴퓨터마다 다르게 할수있으려나? 그것도 한번 찾아볼 예정이다.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;내 포트폴리오 사이트
+      &lt;ul&gt;
+        &lt;li&gt;2021.11.20일 기준.
+          &lt;ul&gt;
+            &lt;li&gt;스스로 내 포트폴리오를 만들어보고싶었다!&lt;/li&gt;
+            &lt;li&gt;모바일 디자인은 아직 못했다. 이건 다른 UX/UI 디자인 홈페이지같은걸 좀 참고하며 감을 늘려야한다.&lt;/li&gt;
+            &lt;li&gt;현재 react-router로 홈페이지를 만들었는데 아직 안의 기능을 넣지못했다.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;코로나 집계 사이트
+      &lt;ul&gt;
+        &lt;li&gt;2021.11.21일 기준.
+          &lt;ul&gt;
+            &lt;li&gt;api관련해 빠르게 따라할수 있는 클론코딩으로 정했다. 먼저 만들고 나서 기능을 두세개정도 추가할 예정이다.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;그-외에&quot;&gt;그 외에&lt;/h3&gt;
+&lt;div class=&quot;notice--primary&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;블로그 개발
+      &lt;ul&gt;
+        &lt;li&gt;카테고리를 만들자.&lt;/li&gt;
+        &lt;li&gt;폰트 디자인, 크기 수정&lt;/li&gt;
+        &lt;li&gt;디자인 조금 수정해야할듯?&lt;/li&gt;
+        &lt;li&gt;수정할것이 아직 산더미다~!&lt;/li&gt;
+        &lt;li&gt;github 페이지 privite으로… 월별 결제 내년부터 하자!&lt;/li&gt;
+        &lt;li&gt;Google Analytics 등록해보기?&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;추후에도 추가할 예정이다.
+배울게많으니까 차근차근 쌓아가며 개발하자!&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="일상" /><summary type="html">꽤 긴 주저리들과 하고싶은 간단한 toy 프로젝트들, 블로그 개선점 정리</summary></entry><entry><title type="html">JS 객체 관련 with , in에 대하여</title><link href="http://localhost:4000/post/javascript/JS-object-with,in/" rel="alternate" type="text/html" title="JS 객체 관련 with , in에 대하여" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/javascript/JS-object-with,in</id><content type="html" xml:base="http://localhost:4000/post/javascript/JS-object-with,in/">&lt;p&gt;JS 공부를 하다가  with과 in 관련해서 정리를 해두려고 한다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="JavaScript" /></entry><entry><title type="html">git 명령어 정리</title><link href="http://localhost:4000/post/git/git-command/" rel="alternate" type="text/html" title="git 명령어 정리" /><published>2021-11-19T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/git/git-command</id><content type="html" xml:base="http://localhost:4000/post/git/git-command/">&lt;ul&gt;
+  &lt;li&gt;추후 추가되는 글입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;내가 만들던 프로젝트나 공부용 파일들을 백업하는김에 이것저것 뒤져보다&lt;br /&gt;
+최근에서야 실무에서도 많이쓰이는 git을 알고 사용하기로 결정!&lt;/p&gt;
+
+&lt;p&gt;그런데… 팀 프로젝트를 했을적에는 git의 정체도 몰랐었다!(!!!!!)&lt;br /&gt;
+서로 카톡으로 프로젝트의 파일을 수정하며 결합했다가 그럼에도 오류났을때 비명을 질렀던 기억이 난다..&lt;br /&gt;
+지금이라도 익숙해지자 싶어 공부를 시작하고야 말았는데!&lt;/p&gt;
+
+&lt;p&gt;나 자신을 위한 git 명령어를 노션에 정리해두었지만&lt;br /&gt;
+이제 블로그에 차근차근 업데이트를 할 생각이다.&lt;/p&gt;
+
+&lt;h1 id=&quot;처음의-git&quot;&gt;처음의 git&lt;/h1&gt;
+
+&lt;p&gt;깃 배쉬에서 맨 처음 해줘야하는것&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;git config –global user.name “유저 이름”&lt;br /&gt;
+git config –global user.email “가입할 때 사용한 메일 주소”&lt;br /&gt;
+git status&lt;/strong&gt;&lt;br /&gt;
+저장소의 상태확인&lt;br /&gt;
+현재 브랜치의 이름과 추가, 변경된 파일과 디렉토리 목록 표시&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git init&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;프로젝트에 git 추가하는것. (현재 디렉토리를 git저장소로 변환)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git add  파일이름&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;파일 원격 저장소 추가 ( 깃 저장소 스냅샷)&lt;/p&gt;
+
+&lt;p&gt;git add . 로 전부 저장가능&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git commit  -m 커밋시 남길 메시지&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;디렉토리의 변경/추가를 git 웹 저장소에 기록&lt;/p&gt;
+
+&lt;p&gt;git commit -am 설명      /        add와 커밋까지 같이 해줌&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git push 로컬저장소링크 브랜치이름 (git push origin master)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;프로젝트에 git 추가하는것. (현재 디렉토리를 git저장소로 변환)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git clone 저장소 주소&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;현재 위치하고있지 않은 저장소로 갈아끼우는느낌 (체크아웃) 
+저장소의 내용을 다운로드받고 자동으로 init도 됨&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git checkout 브랜치 이름&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;로컬 저장소의 브랜치를 전환  (체크아웃)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git merge&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;브랜치에서 하던 작업을 끝내고 동료가 볼수있는 master 브랜치로 합치는 과정.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git pull&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;로컬저장소 작업시 저장소의 최신버전을 받아옴
+&lt;strong&gt;git pull origin master&lt;/strong&gt; 하면 origin의 내용이 master로 복사됨.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;git remote&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;원격 저장소를 관리할수있는 명령어&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;git remote add origin https://github.com/링크&lt;/strong&gt;
+origin이라는 이름으로 원격저장소 주소 등록&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;git remote remove origin&lt;/strong&gt;
+origin이라는 이름의 &lt;em&gt;**&lt;/em&gt;원격저장소 지우기&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;git remote -v&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;현재 링크가 어디로 되있는지 확인 (fetch와 push)&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="Git" /><summary type="html">개발하다 헷갈릴때 보려고 정리한 git 명령어들</summary></entry><entry><title type="html">jekyll 블로그 제작관련 기록</title><link href="http://localhost:4000/post/blog/blog_command/" rel="alternate" type="text/html" title="jekyll 블로그 제작관련 기록" /><published>2021-11-17T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/post/blog/blog_command</id><content type="html" xml:base="http://localhost:4000/post/blog/blog_command/">&lt;ul&gt;
+  &lt;li&gt;추후 추가되는 글입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;로컬서버-구동-할-때&quot;&gt;로컬서버 구동 할 때!&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmd에서  
+bundle exec jekyll serve  
+으로 로컬 서버에서 구동확인
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;구동했을시-관련-오류&quot;&gt;구동했을시 관련 오류.&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-- cannot load such file -- webrick 오류가 나서 bundle add webrick을 설치한뒤  
+다시 bundle exec jekyll serve 실행.  
+참고 글 : https://junho85.pe.kr/1850  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;블로그-글-작성시-작성-방법&quot;&gt;블로그 글 작성시 작성 방법!&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title:                     # 제목
+excerpt:                   # 글의 설명 
+date:                      # 작성일 
+categories:                # 카테고리 지정
+last_modified_at :         # 수정일
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;블로그-글-작성-마크다운&quot;&gt;블로그 글 작성 마크다운!&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;줄바꿈 - 라인의 마지막 줄에 스페이스바 두번.
+&amp;lt;p&amp;gt; 효과(문단) - p효과를 줄 문단 위 아래 엔터키
+취소선 효과 - ~~  쓸 글  ~~
+H1 같이 강조 효과 - # ## ###  (숫자가 늘어날때마다 #수가 더 늘어남.)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>LATIsi</name></author><category term="post" /><category term="blog" /><summary type="html">기록방법 정리 / 오류 정리!</summary></entry></feed>
