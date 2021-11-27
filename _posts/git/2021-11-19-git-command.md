@@ -3,7 +3,7 @@ title: "git 명령어 정리"
 excerpt: " 개발하다 헷갈릴때 보려고 정리한 git 명령어들 "
 date: 2021-11-19
 categories: Git
-last_modified_at : 2021-11-20
+last_modified_at : 2021-11-22
 ---
 * 추후 추가되는 글입니다.
 
@@ -63,6 +63,14 @@ git commit -am 설명      /        add와 커밋까지 같이 해줌
 현재 위치하고있지 않은 저장소로 갈아끼우는느낌 (체크아웃) 
 저장소의 내용을 다운로드받고 자동으로 init도 됨
 
+** git clone 경로 . **  
+현재 폴더에 소스를 바로 받아옴
+
+git log로 버전 확인하고
+** git reset --hard 버전 **
+이전 버전 돌아가기 
+
+
 ---
 
 **git checkout 브랜치 이름**
@@ -98,5 +106,7 @@ origin이라는 이름의 ****원격저장소 지우기
 
 현재 링크가 어디로 되있는지 확인 (fetch와 push)
 
+----
 
-
+**git branch -m old_branch new_branchgit**  
+깃 브랜치 이름 바꾸기.
