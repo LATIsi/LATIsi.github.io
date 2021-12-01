@@ -6,7 +6,7 @@ categories: JavaScript
 last_modified_at : 2021-11-22
 ---
 
-JS 책을 보며 공부를 하다가 객체의 with과 in 관련해서 이해한것을 정리 하려고 한다.
+JS 책을 보며 공부를 하다가 객체의 with과 in 관련해서 이해한것을 정리한 포스트이다.
 
 
 ## in
