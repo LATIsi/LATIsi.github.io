@@ -31,7 +31,7 @@ Rank chart라는 차트 아이콘을 클릭하면 이렇게 리렌더링된 컴�
 
 1. React.memo 사용
 2. useState의 함수형 업데이트 기능 or useReducer (불변성 매우 중요!!)
-3. react - virtualized를 사용한 렌더링 최적화
+3. windowing을 사용한 렌더링 최적화
 
 ---
 
@@ -75,11 +75,32 @@ const [배열, dispatch] = useReducer(Reducer, undefined, 값들이 들어있는
 
 ---
 
-## ` react - virtualized를 사용한 렌더링 최적화`
+## `windowing을 사용한 렌더링 최적화`
 
-react - virtualized 라이브러리에서 제공하는 List 컴포넌트를 사용해 최적화하기!
+windowing중에선 react - virtualized 와 react - window 라이브러리가 있다.  
+후반의 링크의 글처럼, 무한스크롤에서 렌더링이 너무 오래걸리면 사용하는게좋다.
+
+라이브러리에서 제공하는 List 컴포넌트를 사용해 최적화하기!
 
 알아야할것은 작업하기전, 각 항목의 실제 크기를 알아야한다.
+
+```
+import [List] from 'react-virtualized'
+
+.....
+
+<List
+    width ={찾은 전체가로길이}
+    height={찾은 전체 세로길이}
+    roewCount={배열.length}
+    rowHeight={리스트의 각각 항목의 높이}
+    rowRenderer={렌더링시 쓰는 함수} list= {배열}/>
+
+```
+
+사용방법으로는 https://yoon-dumbo.tistory.com/21를 참고하였습니다.
+
+무한 스크롤 관련으로 https://velog.io/@kimjh96/react-virtualized-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94 를 참고하였습니다.
 
 ---
 
