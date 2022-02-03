@@ -3,7 +3,7 @@ title: "일반 css와 sass"
 excerpt: "특히 react에서 쓰이는 css들"
 date: 2022-01-15
 categories: Css
-last_modified_at: 2022-01-15
+last_modified_at: 2022-01-30
 ---
 
 ## 일반 css
@@ -35,7 +35,7 @@ Css Selector 같은 경우, 특정 클래스안에 css 클래스가 있는 경�
 
 ..그런데 이렇게 import해서 불러올시 상대경로로 작성하는것이 대다수이므로, 구조가 깊어졌더라면 sass-loader를 **커스터마이징**하자.
 
-흠, 프로젝트 디렉터리에서 yarn eject로 **_프로젝트의 숨겨진 세부설정을 밖으로 뺄수 있다!!_**  
+흠, 프로젝트 디렉터리에서 `yarn eject`로 **_프로젝트의 숨겨진 세부설정을 밖으로 뺄수 있다!!_**  
 yarn을 안쓴다면 npm run eject 으로 해도 괜찮다.
 
 https://velog.io/@eye3570/cra%EC%97%90%EC%84%9C-sass-loader-%EC%84%A4%EC%A0%95-%EC%BB%A4%EC%8A%A4%ED%84%B0%EB%A7%88%EC%9D%B4%EC%A7%95%ED%95%98%EA%B8%B0  
@@ -70,3 +70,27 @@ body {
   color : #333 ;
 }
 ```
+
+@mixin (함수같은 css) 을 만들어서, 재사용되는 블록을 함수처럼 만들 수 있다.
+
+```
+@maxin a1 ($px){
+  $width : 10px* $px;
+  width : $width;
+  height: $width * 2;
+}
+
+이런식으로 만들면
+
+...
+
+.square {
+  background: red;
+  @include a1(5);
+}
+
+이런식으로 쓸수있다.
+
+```
+
+또는, @mixin이나 다른 파일에서 사용될수있는 Sass변수를 scss 학장자를 가진 다른 파일명로 분류하여 필요한곳에서 import로 불러와 사용할 수 있다.
