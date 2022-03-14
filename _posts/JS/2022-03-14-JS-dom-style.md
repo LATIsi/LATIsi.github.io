@@ -1,0 +1,115 @@
+---
+title: "JS - dom 관련2 "
+excerpt: "dom에 관련된 요소스타일"
+date: 2022-03-14
+categories: JS
+last_modified_at: 2022-03-14
+---
+
+# DOM (Document object model) , 문서객체모델
+
+<br>
+
+html코드를 해석하여 트리형태로 구조화 된, 객체가 된 문서.  
+<u>html문서와 자바스크립트를 연결</u>하여 이용하는게 목적!
+
+- html는 요소(태그)/텍스트 노드로 구분할수 있다.  
+  요소노드 - html
+  텍스트 노드 - 요소노드 안에 들어가 있는 글자를 의미함
+
+---
+
+<br>
+
+JS로 html제어시, 가장먼저 dom에 접근하려면 document를 사용해야한다.  
+// `document는 dom 트리의 최상위 객체이다!`
+
+문서객체와 텍스트노드를 생성하는 메서드.  
+웹페이지에 아무것도 없을때 노드를 생성할때 사용하자.
+
+<br>
+
+```
+document.createElement('태그 이름')
+document.createTextNode('텍스트')
+```
+
+---
+
+<br>
+
+또한 화면에 문서객체를 출력하려면 문서객체를 body 문서 객체에 연결해야 한다
+
+<br>
+
+```
+document.appendChild('노드 이름')
+```
+
+<br>
+
+---
+
+<br>
+
+또한 제거 메서드는 이것이다. <br>
+문서 객체의 자식노드를 제거한다.
+
+<br>
+
+```
+document.removeChild('노드 이름')
+```
+
+<br>
+
+---
+
+<br>
+
+문서 객체의 속성을 가져오고 지정하는 메서드
+
+<br>
+
+| 메소드 이름                   |        설명        |
+| ----------------------------- | :----------------: |
+| `setAttribute(속성 이름, 값)` |   객체 속성 지정   |
+| `getAttribute(속성 이름)`     | 객체 속성 가져오기 |
+
+```
+document.createElement('속성').setAttribute('노드 이름','값');
+document.createElement('속성').getAttribute('노드 이름');
+```
+
+<br>
+
+---
+
+<br>
+
+## 하지만
+
+이렇게 노드를 만들고 이어붙이는것보다 더 쉬운 방법이있다
+
+| 메소드 이름 |                              설명                               |
+| ----------- | :-------------------------------------------------------------: |
+| `innerHTML` | 태그의 내부를 의미함. <br> 사용시 날 것 그대로의 html을 반환함. |
+| `innerText` |    가져온 내용 중 태그를 제외한<br> 문자열 해당 텍스트 출력     |
+
+innerHTML으로 문자열을 직접 넣어줘 document.body 안에 +=을 사용하여 직접 내용을 추가해 넣을수가 있다
+
+<br>
+
+# 문서 객체 가져오기
+
+웹페이지에 이미 존재하는 html태그를 JS로 가져오는 방법이다.
+
+| 메소드 이름                              |                                                       설명                                                        |
+| ---------------------------------------- | :---------------------------------------------------------------------------------------------------------------: |
+| `document.getElementById(id) `           |                          받은 인자값과 태그의 <br> 유일한 id가 일치한 문서객체를 가져옴                           |
+| `document.getElementsByClassName(id) `   | 받은 인자값과 태그의 class값으로 해당하는 요소 <strong><u>모두 선택</u></strong>, <br> \* Element 뒤에 s가 붙는다 |
+| `document.getElementsByTagName(id) `     |   받은 인자와 태그이름이 일치한 문서객체를 <strong><u>모두 가져옴</u></strong> <br> \* Element 뒤에 s가 붙는다    |
+| `document.querySelector(cssSelector)`    |                  css 선택자를 기준으로, 동일한 선택자가 여러개라도 <br> 가장 첫번째 요소만 선택.                  |
+| `document.querySelectorAll(cssSelector)` |                      querySelector와는 달리 일치하는 모든 요소를 선택해 배열로 가지고 온다..                      |
+
+---
