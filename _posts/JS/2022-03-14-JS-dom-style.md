@@ -2,7 +2,11 @@
 title: "JS - dom 관련2 "
 excerpt: "dom에 관련된 요소스타일 수정방법"
 date: 2022-03-14
-categories: JS
+categories:
+  - JS
+tags:
+  - JS
+  - dom
 last_modified_at: 2022-03-15
 ---
 

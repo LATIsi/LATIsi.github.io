@@ -38,7 +38,7 @@
 
 
 
-  <meta property="article:modified_time" content="2021-11-20T00:00:00+09:00">
+  <meta property="article:modified_time" content="2021-11-22T00:00:00+09:00">
 
 
 
@@ -125,9 +125,13 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="https://latisi.github.io/">home</a>
             </li><li class="masthead__menu-item">
-              <a href="https://latisi.github.io/">post</a>
+              <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="https://latisi.github.io/">portfolio</a>
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tag</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://latisi.github.io/myhome/">portfolio</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -176,9 +180,11 @@
       
         
           
-        
+            <li><a href="mailto:p.kmj9911@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
           
         
+          
+            <li><a href="https://github.com/LATIsi" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
       
@@ -250,7 +256,7 @@
     <meta itemprop="headline" content="git 명령어 정리">
     <meta itemprop="description" content="개발하다 헷갈릴때 보려고 정리한 git 명령어들">
     <meta itemprop="datePublished" content="2021-11-19T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2021-11-20T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2021-11-22T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
@@ -271,8 +277,18 @@
       </span>
     
 
-    
+    <span class="page__meta-sep"></span>
 
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
     
   </p>
 
@@ -341,6 +357,13 @@ git status</strong><br />
 <p>현재 위치하고있지 않은 저장소로 갈아끼우는느낌 (체크아웃) 
 저장소의 내용을 다운로드받고 자동으로 init도 됨</p>
 
+<p>** git clone 경로 . **<br />
+현재 폴더에 소스를 바로 받아옴</p>
+
+<p>git log로 버전 확인하고
+** git reset –hard 버전 **
+이전 버전 돌아가기</p>
+
 <hr />
 
 <p><strong>git checkout 브랜치 이름</strong></p>
@@ -376,6 +399,10 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
 
 <p>현재 링크가 어디로 되있는지 확인 (fetch와 push)</p>
 
+<hr />
+
+<p><strong>git branch -m old_branch new_branchgit</strong><br />
+깃 브랜치 이름 바꾸기.</p>
 
         
       </section>
@@ -402,31 +429,20 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-11-20">November 20, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-11-22">November 22, 2021</time></p>
 
       </footer>
 
-      <section class="page__share">
-  
-    <h4 class="page__share-title">공유하기</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=git+%EB%AA%85%EB%A0%B9%EC%96%B4+%EC%A0%95%EB%A6%AC%20http%3A%2F%2Flocalhost%3A4000%2Fgit%2Fgit-command%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fgit%2Fgit-command%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fgit%2Fgit-command%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
+      
 
       
   <nav class="pagination">
     
-      <a href="/blog/blog_command/" class="pagination--pager" title="jekyll 블로그 제작관련 기록
+      <a href="/blog/Blog_log/" class="pagination--pager" title="jekyll 블로그 제작관련 기록
 ">이전</a>
     
     
-      <a href="/javascript/JS-object-with,in/" class="pagination--pager" title="JS 객체 관련 with , in에 대하여
+      <a href="/js/JS-object-with,in/" class="pagination--pager" title="JS 객체 관련 with , in 이해한것 정리
 ">다음</a>
     
   </nav>
@@ -451,7 +467,7 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%9D%BC%EC%83%81/toyproject/" rel="permalink">개발 목표 관련
+        <a href="/js/JS-JShtml/" rel="permalink">JQuery - 기본적인 정리
 </a>
       
     </h2>
@@ -461,19 +477,29 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-11-20T00:00:00+09:00">November 20, 2021</time>
+        <time datetime="2022-03-17T00:00:00+09:00">March 17, 2022</time>
       </span>
     
 
-    
+    <span class="page__meta-sep"></span>
 
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">꽤 긴 주저리들과 하고싶은 간단한 toy 프로젝트들
+    <p class="archive__item-excerpt" itemprop="description">그리고 객체속성 Enumerable에 대하여
 </p>
   </article>
 </div>
@@ -488,7 +514,7 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/javascript/JS-object-with,in/" rel="permalink">JS 객체 관련 with , in에 대하여
+        <a href="/js/JS-forin_forof/" rel="permalink">JS for-in 과 for-of
 </a>
       
     </h2>
@@ -498,19 +524,29 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-11-20T00:00:00+09:00">November 20, 2021</time>
+        <time datetime="2022-03-15T00:00:00+09:00">March 15, 2022</time>
       </span>
     
 
-    
+    <span class="page__meta-sep"></span>
 
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="description">그리고 객체속성 Enumerable에 대하여
 </p>
   </article>
 </div>
@@ -525,7 +561,7 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/blog_command/" rel="permalink">jekyll 블로그 제작관련 기록
+        <a href="/js/JS-event/" rel="permalink">JS - 이벤트 관련
 </a>
       
     </h2>
@@ -535,19 +571,76 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-11-17T00:00:00+09:00">November 17, 2021</time>
+        <time datetime="2022-03-15T00:00:00+09:00">March 15, 2022</time>
       </span>
     
 
-    
+    <span class="page__meta-sep"></span>
 
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">기록방법 정리 / 오류 정리와 목표.
+    <p class="archive__item-excerpt" itemprop="description">자바스크립트의 이벤트와 이벤트 관련 this
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/js/JS-animations/" rel="permalink">JS 애니메이션 구현방법
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-03-15T00:00:00+09:00">March 15, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">CSS Transition, CSS Animations, JS Animations &amp; Timer Function
 </p>
   </article>
 </div>
@@ -576,15 +669,7 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
     
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
+          <li><a href="https://github.com/LATIsi" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> github</a></li>
         
       
     
@@ -595,7 +680,7 @@ origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 LATIsi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 LATIsi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

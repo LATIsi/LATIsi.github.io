@@ -2,7 +2,11 @@
 title: "React - node.js 와 express"
 excerpt: "공부를 하며 node.js 와 express에 대한 정리"
 date: 2022-03-13
-categories: React
+categories:
+  - React
+tags:
+  - React
+  - node.js
 last_modified_at: 2022-03-14
 ---
 

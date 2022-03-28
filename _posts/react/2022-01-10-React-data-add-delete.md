@@ -2,7 +2,10 @@
 title: "React map, concat, filter"
 excerpt: " 기본적인 데이터 추가, 데이터 삭제"
 date: 2022-01-10
-categories: React
+categories:
+  - React
+tags:
+  - React
 last_modified_at: 2022-01-10
 ---
 

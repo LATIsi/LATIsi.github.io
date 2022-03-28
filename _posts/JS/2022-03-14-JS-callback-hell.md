@@ -2,7 +2,11 @@
 title: "JS 콜백함수 & 구조분해 할당"
 excerpt: "- 콜백 지옥관련 해결방법과 API 구조분해할당으로 값 빼기."
 date: 2022-03-14
-categories: JS
+categories:
+  - JS
+tags:
+  - JS
+  - 콜백함수
 last_modified_at: 2022-03-14
 ---
 

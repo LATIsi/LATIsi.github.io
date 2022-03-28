@@ -2,7 +2,10 @@
 title: "JS 전개 연산자를 통한 배열 복제와 복사 관련 정리"
 excerpt: " & 옵션 객체 "
 date: 2021-12-01
-categories: JavaScript
+categories:
+  - JS
+tags:
+  - JS
 last_modified_at: 2022-01-23
 ---
 

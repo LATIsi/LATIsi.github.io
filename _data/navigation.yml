@@ -2,12 +2,14 @@
 main:
   - title: "home"
     url: https://latisi.github.io/
+  - title: "About"
+    url: "/about/"
+  - title: "Category"
+    url: "/categories/"
+  - title: "tag"
+    url: "/tags/"
   - title: "portfolio"
-      url: https://latisi.github.io/myhome/
-  - title: "post"
-    url: https://latisi.github.io/
-  - title: "Quick-Start Guide"
-      url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/            
+    url: https://latisi.github.io/myhome/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

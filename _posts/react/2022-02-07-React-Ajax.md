@@ -2,7 +2,11 @@
 title: "비동기 작업 ajax와 api"
 excerpt: "데이터 받아오기!"
 date: 2022-02-07
-categories: React
+categories:
+  - React
+tags:
+  - React
+  - AJAX
 last_modified_at: 2022-02-07
 ---
 

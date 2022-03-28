@@ -2,7 +2,11 @@
 title: "2021.11 - 2022.01 개발 목표 관련"
 excerpt: "꽤 긴 주저리들과 하고싶은 간단한 toy 프로젝트들"
 date: 2021-11-20
-categories: 일상
+categories:
+  - 일상
+tags:
+  - 일상
+  - 목표
 last_modified_at: 2022-02-07
 ---
 

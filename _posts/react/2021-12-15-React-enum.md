@@ -2,7 +2,10 @@
 title: "React enum"
 excerpt: "enum에 관해서"
 date: 2021-12-15
-categories: React
+categories:
+  - React
+tags:
+  - React
 last_modified_at: 2021-12-15
 ---
 

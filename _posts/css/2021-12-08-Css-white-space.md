@@ -2,7 +2,10 @@
 title: "css 줄바꿈 (\n) 변환방법"
 excerpt: "white-space 요소안의 공백 처리 지정"
 date: 2021-12-08
-categories: Css
+categories:
+  - CSS
+tags:
+  - CSS
 last_modified_at: 2021-12-08
 ---
 

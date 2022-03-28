@@ -2,7 +2,10 @@
 title: "JS for-in 과 for-of "
 excerpt: "그리고 객체속성 Enumerable에 대하여 "
 date: 2022-03-15
-categories: JS
+categories:
+  - JS
+tags:
+  - JS
 last_modified_at: 2022-03-15
 ---
 

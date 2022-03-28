@@ -2,7 +2,12 @@
 title: "Cannot read properties of undefined (reading 'map')"
 excerpt: " react-chartjs-2, chart.js 관련 라이브러리 오류 관련"
 date: 2021-11-25
-categories: React
+categories:
+  - React
+tags:
+  - React
+  - 오류
+  - 라이브러리
 last_modified_at: 2021-11-25
 ---
 

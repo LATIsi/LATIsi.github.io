@@ -2,12 +2,16 @@
 title: "컴포넌트 성능 최적화 하는법"
 excerpt: "크롬 개발자 도구와 함께!"
 date: 2022-01-21
-categories: React
+categories:
+  - React
+tags:
+  - React
+  - 개발자 도구
 last_modified_at: 2022-01-21
 ---
 
 컴포넌트가 느려지는 원인의 대표적인 예시로  
-바뀐것 들만 리렌더링할것을 전부 리렌더링하여 느려질때가 있다.
+바뀐것들만 리렌더링할것을 전부 리렌더링하여 느려질때가 있다.
 
 상황을 살펴보는방법!  
 크롬에서 f12를 눌러 components 말고도 Profiler라는 탭을 활용 한다.  

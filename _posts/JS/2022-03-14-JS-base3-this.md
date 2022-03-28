@@ -2,7 +2,10 @@
 title: "JS의 기초적인 정보 3 "
 excerpt: "배열 추가, 순회, 필터링 메서드와 this 관련 정리"
 date: 2022-03-14
-categories: JS
+categories:
+  - JS
+tags:
+  - JS
 last_modified_at: 2022-03-14
 ---
 

@@ -2,7 +2,11 @@
 title: "2022.02 - 04 개발 목표 관련"
 excerpt: "구름 자바스크립트 KDC 19기 수강과 함께"
 date: 2022-02-09
-categories: 일상
+categories:
+  - 일상
+tags:
+  - 일상
+  - 목표
 last_modified_at: 2022-02-09
 ---
 

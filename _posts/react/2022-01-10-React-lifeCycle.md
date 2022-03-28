@@ -2,7 +2,10 @@
 title: "React 라이프 사이클"
 excerpt: "라이플사이클에 대해서 공부하기"
 date: 2022-01-10
-categories: React
+categories:
+  - React
+tags:
+  - React
 last_modified_at: 2022-01-12
 ---
 

@@ -2,7 +2,11 @@
 title: "React hook"
 excerpt: "리엑트 내장 훅에 대하여"
 date: 2022-01-12
-categories: React
+categories:
+  - React
+tags:
+  - React
+  - 라이브러리
 last_modified_at: 2022-01-13
 ---
 

@@ -2,7 +2,10 @@
 title: "JS 객체 관련 with , in 이해한것 정리"
 excerpt: "추가로 속성추가, 삭제"
 date: 2021-11-20
-categories: JavaScript
+categories:
+  - JS
+tags:
+  - JS
 last_modified_at: 2021-11-22
 ---
 

@@ -1,242 +1,1287 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-21T17:56:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이것저것 코딩개발 일기</title><subtitle>코딩을 하면서 몰랐거나 배웠던것을 채워가는 블로그입니다.</subtitle><author><name>LATIsi</name></author><entry><title type="html">개발 목표 관련</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/toyproject/" rel="alternate" type="text/html" title="개발 목표 관련" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/toyproject</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/toyproject/">&lt;p&gt;올해 대학교를 졸업하고나서 10월 중 후반부터 본격적인 프런트공부를 하기 시작했다!&lt;/p&gt;
-=======
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-21T17:47:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이것저것 코딩개발 일기</title><subtitle>코딩을 하면서 몰랐거나 배웠던것을 채워가는 블로그입니다.</subtitle><author><name>LATIsi</name></author><entry><title type="html">개발 목표 관련</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/toyproject/" rel="alternate" type="text/html" title="개발 목표 관련" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/toyproject</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/toyproject/">&lt;p&gt;올해 대학교를 졸업하고나서 10월 중 후반부터 본격적인 프런트공부를 하기 시작했다!&lt;/p&gt;
->>>>>>> 41164ad16db9efe9053ebf4fcea88547781c7c75
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-29T00:47:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이것저것 코딩개발 일기</title><subtitle>코딩을 하면서 몰랐거나 배웠던것을 채워가는 블로그입니다.</subtitle><author><name>LATIsi</name></author><entry><title type="html">JQuery - 기본적인 정리</title><link href="http://localhost:4000/js/JS-JShtml/" rel="alternate" type="text/html" title="JQuery - 기본적인 정리" /><published>2022-03-17T00:00:00+09:00</published><updated>2022-03-17T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-JShtml</id><content type="html" xml:base="http://localhost:4000/js/JS-JShtml/">&lt;h1 id=&quot;jquery&quot;&gt;JQuery&lt;/h1&gt;
 
-&lt;p&gt;왜냐면 나는 그림그리는 것을 굉장히 좋아한다.&lt;br /&gt;
-오죽하면 중고딩때 매일 그림공책을 들고 건물을 따라 그리거나 크로키 하는 것도 좋아했고.&lt;br /&gt;
-그때문인가 고등학교도 디자인학과에 들어가서 그때 웹디자인도 처음으로 해봤다.&lt;/p&gt;
+&lt;p&gt;JS를 이용한 html조작, 애니메이션 효과, 네트워크등을 더 편하게 하기위한 거의 모든 웹브라우저에서 호환이 가능한 JS 라이브러리.&lt;/p&gt;
 
-&lt;p&gt;근데 디자인만으로 만족 못하고 그 안의 기능도 내 스스로 개발하고 싶은걸 어떻게 하라는건지 ;(&lt;br /&gt;
-특히 앱개발을 너무너무너무너무 하고싶었다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;간지나잖아 앱개발하는거!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;그래서 대학교 진로도 앱개발쪽으로 틀었다.&lt;/p&gt;
-
-&lt;p&gt;1학년때는 c언어, 2학년때는 JAVA로 본격적인 안드로이드 앱 개발을 배우며&lt;br /&gt;
-자료구조 / DB sql도 이 쯔음에서야 배웠다.&lt;br /&gt;
-어플을 기획/개발하며 팀프로젝트를 하는데 문제는 정작 UX/UI관련해서는 어떤 툴을 써야하고,&lt;br /&gt;
-공유는 어떻게하며… 어떤 디자인이 요새 트렌드인지를 하나도 몰랐던것이다.&lt;br /&gt;
-그래도 맨땅에 헤딩으로 어찌저찌 열심히 디자인했다.&lt;br /&gt;
-&lt;del&gt;지금 보면 와 진짜 구리다… 라는 말이 나올정도로 처참하다 정말로…&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;모두가 확인할수있는 디자인 공유툴을 몰랐다, 일단 팀원들이 확인해봐야하니 구글 프레젠테이션으로 스토리보드를 디자인하고. (지금 생각하면 진짜 할 짓이 안되는구나… 싶음)&lt;br /&gt;
-기획부분에서도 많이 엇갈리는 부분도 많아 정작 학기안에 개발을 못한 프로젝트도 많았다.&lt;/p&gt;
-
-&lt;p&gt;3학년 쯔음에서야 실무관련으로 배웠다.&lt;br /&gt;
-…음.. 주로 myphpAdmin과 관련해서, php와 서버, 안드로이드의 리스트뷰와 리사이클러뷰,&lt;br /&gt;
-json관련으로 데이터를 REST api로 POST,GET,PUT으로 어떻게 주고받는지에 대한 공부를 파고들었다.&lt;br /&gt;
-더불어 리눅스 가상서버도 배우고 알차게 보냈다.&lt;br /&gt;
-특히 졸작으로 이력서/구인글 관련 앱을 완성도 있게 만들었지만 출시까지는 못해 안타까웠다.&lt;br /&gt;
-서버도 기한이 지나 날라가버려 눈물남…&lt;/p&gt;
-
-&lt;p&gt;특히 어플 기획을 배웠던게 기억나는데&lt;br /&gt;
-아니 교수님~~? ppt로 앱의 기획서를 짜라고요? 
-예? 이걸 제가요? 까짓거 함 해보겠습니다!! 하고 달려들었다&lt;/p&gt;
-
-&lt;p&gt;앱에 ##한 기능 있으면 좋겠다~! 하고 열정이 넘쳐 60장 넘기게 기획하다&lt;br /&gt;
-너무 기능이 많아 필요한 기능만 심플하게 남기는 경험도 해보고…&lt;br /&gt;
-그래도 기획하며 디자인하는거 은근 재미있었으니까 좋은경험이었다.&lt;/p&gt;
-
-&lt;p&gt;그런데 이런 경험들이 있어서 그런가&lt;/p&gt;
-&lt;h3 id=&quot;무언가를-개발할때-먼저-기획하고-디자인하는게-버릇이-들어버리고만-것&quot;&gt;무언가를 개발할때 먼저 기획하고 디자인하는게 버릇이 들어버리고만 것!&lt;/h3&gt;
-
-&lt;p&gt;작년쯤에서야 UX/UI쪽으로 포토샵에 zepiln 플러그인을 사용해 다루다가 최근 쓰기 편해보이는 figma를 사용하기 시작했다. 어도비XD도 좋은것같은데, 이건 나중에 내가 실무에 익숙해지면 다루고싶다.&lt;br /&gt;
-배울게 너무 많다!!&lt;br /&gt;
-이것도 하고싶고 저것도 하고싶고 &lt;del&gt;헉ㅎ헉헉헉너무많아!!!&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;아무튼 주저리주저리 다 내뱉고 나자면!&lt;br /&gt;
-대학교때 내가 배우던것들은 주로 안드로이드 스튜디오- php- JAVA나 sql같은 DB관련이라&lt;br /&gt;
-프런트 관련으로 꼭 배우면 좋다는 node.js, 리엑트, JS공부를 하기위해 JS와 react관련으로 toy프로젝트를 만들려고 한다.&lt;br /&gt;
-둘다 꽤 익숙해진다면 react-native 관련해 공부해 프로젝트를 만들어보고싶다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;특히, 웹에 있는 클론코딩이라도 천천히 따라해가면서 내가 원하는 기능을 추가해가는걸 목표로 하고있다!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;react-관련&quot;&gt;React 관련&lt;/h3&gt;
-
-&lt;div class=&quot;notice--primary&quot;&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;to-do list
-      &lt;ul&gt;
-        &lt;li&gt;2021.11.20일 기준.
-          &lt;ul&gt;
-            &lt;li&gt;좀 매트하게 디자인하고싶었다.&lt;/li&gt;
-            &lt;li&gt;wow, 이건 내가 원하던 대로의 웹 디자인과 투두리스트- 날짜조회, 할일 갯수, 추가, 삭제까지 완성했다!&lt;/li&gt;
-            &lt;li&gt;그래도 반응형 모바일 디자인까지 놓칠수없지..!! 꼭 만들고 싶어서 불타오르지만 css 관련해서 좀 더 공부하고 개발하고싶다.&lt;/li&gt;
-            &lt;li&gt;더불어서 to-do list의 목록들을 각각 컴퓨터마다 다르게 할수있으려나? 그것도 한번 찾아볼 예정이다.&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;내 포트폴리오 사이트
-      &lt;ul&gt;
-        &lt;li&gt;2021.11.20일 기준.
-          &lt;ul&gt;
-            &lt;li&gt;스스로 내 포트폴리오를 만들어보고싶었다!&lt;/li&gt;
-            &lt;li&gt;모바일 디자인은 아직 못했다. 이건 다른 UX/UI 디자인 홈페이지같은걸 좀 참고하며 감을 늘려야한다.&lt;/li&gt;
-            &lt;li&gt;현재 react-router로 홈페이지를 만들었는데 아직 안의 기능을 넣지못했다.&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;코로나 집계 사이트
-      &lt;ul&gt;
-        &lt;li&gt;2021.11.21일 기준.
-          &lt;ul&gt;
-            &lt;li&gt;api관련해 빠르게 따라할수 있는 클론코딩으로 정했다. 먼저 만들고 나서 기능을 두세개정도 추가할 예정이다.&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;추후에도 추가할 예정이다.
-배울게많으니까 차근차근 쌓아가며 개발하자!&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="일상" /><summary type="html">꽤 긴 주저리들과 하고싶은 간단한 toy 프로젝트들</summary></entry><entry><title type="html">JS 객체 관련 with , in에 대하여</title><link href="http://localhost:4000/javascript/JS-object-with,in/" rel="alternate" type="text/html" title="JS 객체 관련 with , in에 대하여" /><published>2021-11-20T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/javascript/JS-object-with,in</id><content type="html" xml:base="http://localhost:4000/javascript/JS-object-with,in/">&lt;p&gt;JS 공부를 하다가  with과 in 관련해서 정리를 해두려고 한다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JavaScript" /></entry><entry><title type="html">git 명령어 정리</title><link href="http://localhost:4000/git/git-command/" rel="alternate" type="text/html" title="git 명령어 정리" /><published>2021-11-19T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/git/git-command</id><content type="html" xml:base="http://localhost:4000/git/git-command/">&lt;ul&gt;
-  &lt;li&gt;추후 추가되는 글입니다.&lt;/li&gt;
+&lt;ul&gt;
+  &lt;li&gt;직접 JQuery 라이브러리를 다운, 또는 npm으로 설치를 함&lt;/li&gt;
+  &lt;li&gt;script 태그에서 CDN(컨텐츠 델리버리 네트워크) 을 이용하여 웹 네트워크 상에서 로드하기.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;내가 만들던 프로젝트나 공부용 파일들을 백업하는김에 이것저것 뒤져보다&lt;br /&gt;
-최근에서야 실무에서도 많이쓰이는 git을 알고 사용하기로 결정!&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;그런데… 팀 프로젝트를 했을적에는 git의 정체도 몰랐었다!(!!!!!)&lt;br /&gt;
-서로 카톡으로 프로젝트의 파일을 수정하며 결합했다가 그럼에도 오류났을때 비명을 질렀던 기억이 난다..&lt;br /&gt;
-지금이라도 익숙해지자 싶어 공부를 시작하고야 말았는데!&lt;/p&gt;
+&lt;p&gt;JQuery는 기본적으로 $기호로 표현된다!&lt;/p&gt;
 
-&lt;p&gt;나 자신을 위한 git 명령어를 노션에 정리해두었지만&lt;br /&gt;
-이제 블로그에 차근차근 업데이트를 할 생각이다.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $(선택자).JQueryAPI();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;처음의-git&quot;&gt;처음의 git&lt;/h1&gt;
+&lt;p&gt;선택자에는 html 엘리먼트를 곧장 가져와도 좋고, id (#), class(.)를붙여서 가져와도 좋다.&lt;br /&gt;
+그렇게 가져온 선택자로 JQueryAPI를 사용해 조작할수 있는것!
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;깃 배쉬에서 맨 처음 해줘야하는것&lt;/p&gt;
+&lt;p&gt;http://www.tcpschool.com/jquery/intro 참고하기.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><summary type="html">그리고 객체속성 Enumerable에 대하여</summary></entry><entry><title type="html">JS 애니메이션 구현방법</title><link href="http://localhost:4000/js/JS-animations/" rel="alternate" type="text/html" title="JS 애니메이션 구현방법" /><published>2022-03-15T00:00:00+09:00</published><updated>2022-03-15T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-animations</id><content type="html" xml:base="http://localhost:4000/js/JS-animations/">&lt;h1 id=&quot;css-transition&quot;&gt;CSS Transition&lt;/h1&gt;
 
-&lt;p&gt;&lt;strong&gt;git config –global user.name “유저 이름”&lt;br /&gt;
-git config –global user.email “가입할 때 사용한 메일 주소”&lt;br /&gt;
-git status&lt;/strong&gt;&lt;br /&gt;
-저장소의 상태확인&lt;br /&gt;
-현재 브랜치의 이름과 추가, 변경된 파일과 디렉토리 목록 표시&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;가장 쉽게, 간단히 쓸 수 있음&lt;/li&gt;
+  &lt;li&gt;주로 :hover나 :active에 사용하며, 색, 크기 애니메이션시 사용&lt;/li&gt;
+  &lt;li&gt;Transition과 transform을 사용함.&lt;/li&gt;
+  &lt;li&gt;반드시 상호작용, 즉 트리거가 필요함&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;classList를 사용하여 애니메이션 추가 가능.&lt;/p&gt;
 
-&lt;hr /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;add, contains, toggle, remove로 애니메이션을 넣을수 있다.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;3D Transform의 translate3d() 메서드&lt;br /&gt;
+ 현재 위치에서 해당 요소를 주어진 x축과 y축, z축의 거리만큼 이동
+&lt;a&gt;http://www.tcpschool.com/css/css3_transform_3Dtransform&lt;/a&gt; 참고&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;git init&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;p&gt;프로젝트에 git 추가하는것. (현재 디렉토리를 git저장소로 변환)&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  버튼을 누르면 네비게이션바가 나타나는걸 add로 표현하고
 
-&lt;hr /&gt;
+  네비게이션의 메뉴를 누르면 사라지는것을 remove로 사용할수있는데,
 
-&lt;p&gt;&lt;strong&gt;git add  파일이름&lt;/strong&gt;&lt;/p&gt;
+  이걸 classList의 contains로 해당 클래스가 있는지 t/f로 반환된 값으로
 
-&lt;p&gt;파일 원격 저장소 추가 ( 깃 저장소 스냅샷)&lt;/p&gt;
+  	transform: translate3d(0, 0, 0);
 
-&lt;p&gt;git add . 로 전부 저장가능&lt;/p&gt;
+  이 담긴 css class가 있는지 검사를 하고 if문으로 없으면 add, 있으면 remove로 네비게이션바 액션 클래스를 생성/삭제를 해줍니다
 
-&lt;hr /&gt;
+   더 쉽게하는 방법으로는 toggle 메서드를 사용하는것!
 
-&lt;p&gt;&lt;strong&gt;git commit  -m 커밋시 남길 메시지&lt;/strong&gt;&lt;/p&gt;
+  function toggleMenu() {
+      return sideBar.classList.toggle(&apos;active&apos;);
+  };
 
-&lt;p&gt;디렉토리의 변경/추가를 git 웹 저장소에 기록&lt;/p&gt;
-
-&lt;p&gt;git commit -am 설명      /        add와 커밋까지 같이 해줌&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;git push 로컬저장소링크 브랜치이름 (git push origin master)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;프로젝트에 git 추가하는것. (현재 디렉토리를 git저장소로 변환)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;git clone 저장소 주소&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;현재 위치하고있지 않은 저장소로 갈아끼우는느낌 (체크아웃) 
-저장소의 내용을 다운로드받고 자동으로 init도 됨&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;git checkout 브랜치 이름&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;로컬 저장소의 브랜치를 전환  (체크아웃)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;git merge&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;브랜치에서 하던 작업을 끝내고 동료가 볼수있는 master 브랜치로 합치는 과정.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;git pull&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;로컬저장소 작업시 저장소의 최신버전을 받아옴
-&lt;strong&gt;git pull origin master&lt;/strong&gt; 하면 origin의 내용이 master로 복사됨.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;git remote&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;원격 저장소를 관리할수있는 명령어&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;git remote add origin https://github.com/링크&lt;/strong&gt;
-origin이라는 이름으로 원격저장소 주소 등록&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;git remote remove origin&lt;/strong&gt;
-origin이라는 이름의 &lt;em&gt;**&lt;/em&gt;원격저장소 지우기&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;git remote -v&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;현재 링크가 어디로 되있는지 확인 (fetch와 push)&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="Git" /><summary type="html">개발하다 헷갈릴때 보려고 정리한 git 명령어들</summary></entry><entry><title type="html">jekyll 블로그 제작관련 기록</title><link href="http://localhost:4000/blog/blog_command/" rel="alternate" type="text/html" title="jekyll 블로그 제작관련 기록" /><published>2021-11-17T00:00:00+09:00</published><updated>2021-11-20T00:00:00+09:00</updated><id>http://localhost:4000/blog/blog_command</id><content type="html" xml:base="http://localhost:4000/blog/blog_command/">&lt;ul&gt;
-  &lt;li&gt;추후 추가되는 글입니다.&lt;/li&gt;
+  리턴은 꼬옥 해주기
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;로컬서버-구동-할-때&quot;&gt;로컬서버 구동 할 때!&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmd에서  
-bundle exec jekyll serve  
-으로 로컬 서버에서 구동확인
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;transition-이벤트-4가지&quot;&gt;transition 이벤트 4가지&lt;/h1&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;transition 이벤트 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transitionrun&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;transition 이 처음 생성될때 발생. (delay전에)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transitionstart&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;transition이 실제로 변화가 생겨 움직일경우, (delay 종료 후)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transitioncancel&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;transition 이 취소된 상황에 발생 &lt;br /&gt; 원래로 돌아가는것 역시 스타일의 변화이기에 transition이 적용되니 조심!&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transitionend&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;transition 이 완료하면 발생&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;구동했을시-관련-오류&quot;&gt;구동했을시 관련 오류.&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-- cannot load such file -- webrick 오류가 나서 bundle add webrick을 설치한뒤  
-다시 bundle exec jekyll serve 실행.  
-참고 글 : https://junho85.pe.kr/1850  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;css-animations&quot;&gt;CSS Animations&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;0%~ 100% 사이에 keyframe 별로 중단점 브레이크 포인트를 넣어 스타일을 지정해 변화&lt;/li&gt;
+  &lt;li&gt;Transition과는 달리 트리거가 필요없음&lt;/li&gt;
+  &lt;li&gt;무한 반복 가능.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;js-animations&quot;&gt;JS Animations&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;가장 변칙적인 변화를 줄 수 있음&lt;/li&gt;
+  &lt;li&gt;애니메이션 중간에 중지, 일시정지, 감속, 되감기 가능&lt;/li&gt;
+  &lt;li&gt;Animations은 transition과 다르게 run이 없고 iteration이 있다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Animations 이벤트 리스너&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;animationstart&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Animations이 처음 시작될때 발생, Animations-delay가 있다면 해당초만큼 기다리고&lt;br /&gt; Animations이 시작되면서 Animationsstart가 발생.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;animationiteration&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;animationiteration에는 animation-iteration-count가 있다 &lt;br /&gt; 애니메이션 반복횟수 지정!&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;animationend&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;애니메이션 이 끝나면 발생&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;animationcancel&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;애니메이션 시작이후 중단시 발생&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;블로그-글-작성시-작성-방법&quot;&gt;블로그 글 작성시 작성 방법!&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title:                     # 제목
-excerpt:                   # 글의 설명 
-date:                      # 작성일 
-categories:                # 카테고리 지정
-last_modified_at :         # 수정일
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;timer-function&quot;&gt;Timer Function&lt;/h1&gt;
+
+&lt;p&gt;JS의 timer 함수를 사용해 특정패턴을 반복하는 코드를 짤수있다!&lt;/p&gt;
+
+&lt;h2 id=&quot;settimeout&quot;&gt;setTimeout&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;일정시간&lt;u&gt;뒤에&lt;/u&gt; 함수, 코드를 실행하는 타이머 설정&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setTimeout(콜백함수, 초(1000단위 1000= 1초) )&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;두번째 인자 초 후에 콜백함수 실행.&lt;/li&gt;
+  &lt;li&gt;실행되고 나면 ID값인 숫자를 반환함.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cleartimeout&quot;&gt;clearTimeout&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;setTimeout 함수의 실행 취소&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clearTimeout(setTimeout이 반환한 숫자를 담은 변수)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;두번째 인자 초 후에 콜백함수 실행.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setinterval&quot;&gt;setInterval&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;일정시간의 &lt;u&gt;간격을 두고&lt;/u&gt; (즉, 일정시간의 간격을 두고 계속 반복되는 …. ) 함수와 코드를 실행하는 타이머 설정&lt;/li&gt;
+  &lt;li&gt;반환되는 값도 setTimeout과 같게 ID값 숫자를 반환.&lt;/li&gt;
+  &lt;li&gt;사용법은 setTimeout와 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;clearinterval&quot;&gt;clearInterval&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;setInterval 함수를 취소하는 함수.&lt;/li&gt;
+  &lt;li&gt;사용법은 clearTimeout과 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;…그런데. setInterval 과 setTimeout은 사용자가 페이지를 안봐도 계속 실행되어 성능을 하락시키고&lt;br /&gt; 주어진 시간내에 함수를 실행하기에 요즘의 프레임 사용과는 다르게 부드럽지가 않다.&lt;br /&gt;
+그래서 나온것이…
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;requestanimationframe&quot;&gt;requestAnimationFrame&lt;/h2&gt;
+
+&lt;p&gt;이 메소드!&lt;/p&gt;
+
+&lt;p&gt;setTimeout과 비슷하면서 프레임 시작지점에 맞춰 브라우저에게 명령을 내리고 실행하기에, 굉장히 부드럽게 움직인다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><category term="animation" /><summary type="html">CSS Transition, CSS Animations, JS Animations &amp; Timer Function</summary></entry><entry><title type="html">JS for-in 과 for-of</title><link href="http://localhost:4000/js/JS-forin_forof/" rel="alternate" type="text/html" title="JS for-in 과 for-of" /><published>2022-03-15T00:00:00+09:00</published><updated>2022-03-15T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-forin_forof</id><content type="html" xml:base="http://localhost:4000/js/JS-forin_forof/">&lt;h2 id=&quot;for---in&quot;&gt;for - in&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;객체의 속성을 반복하여 작업을 수행한다.&lt;/li&gt;
+  &lt;li&gt;객체의 key 값에만 접근할수 있고, value값에는 접근하지 못한다.&lt;/li&gt;
+  &lt;li&gt;객체의 모든 열거 가능한 속성에 대해 반복&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for---of&quot;&gt;for - of&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사용하기 위해서는 컬렉션 객체가 [Symbol.iterator] 속성을 가지고 있어야 함.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JS의 객체 속성은 내부적으로 숨겨진 속성이 있는데, 그중 하나가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enumerable(열거자)&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NoEnumerable(비열거자)&lt;/code&gt;으로 정의할 수 있다.
+for in 구문은 Enumerable이 true로 되어 속성만 반복. (열거형 속성, false인 것들은 반복하지않음.)&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><summary type="html">그리고 객체속성 Enumerable에 대하여</summary></entry><entry><title type="html">JS - 이벤트 관련</title><link href="http://localhost:4000/js/JS-event/" rel="alternate" type="text/html" title="JS - 이벤트 관련" /><published>2022-03-15T00:00:00+09:00</published><updated>2022-03-15T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-event</id><content type="html" xml:base="http://localhost:4000/js/JS-event/">&lt;h1 id=&quot;이벤트-event&quot;&gt;이벤트 (event)&lt;/h1&gt;
+
+&lt;p&gt;프로그램에 의해 감지되고 처리 될 수 있는 동작이나 사건&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;브라우저에서 감지할 수 있는것들 대부분 모두가 이벤트와 같당! (키보드, 마우스, 문서, css….)&lt;/p&gt;
+
+&lt;p&gt;이벤트는 브라우저에서 발생하지만, 이벤트에 특정코드를 등록하지않으면 이벤트가 실행되지않는다.&lt;br /&gt;
+그래서 등록하기위해 &lt;u&gt;&lt;b&gt;이벤트 핸들러&lt;/b&gt;&lt;/u&gt;를 사용한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;필요한 목록&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event target&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이벤트가 일어나는 객체/요소, 지정해둘 요소(엘리먼트)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event listener&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이벤트 핸들러로도 불린다, 이벤트 발생시 작동시킬 특정코드&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event type&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이벤트의 종류 (click, scroll,focus등등…)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그중에서 event type으로써, event 앞에 &lt;u&gt;on&lt;/u&gt;을 붙인다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;블로그-글-작성-마크다운&quot;&gt;블로그 글 작성 마크다운!&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;줄바꿈 - 라인의 마지막 줄에 스페이스바 두번.
-&amp;lt;p&amp;gt; 효과(문단) - p효과를 줄 문단 위 아래 엔터키
-취소선 효과 - ~~  쓸 글  ~~
-H1 같이 강조 효과 - # ## ###  (숫자가 늘어날때마다 #수가 더 늘어남.)
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; on -EventType- &lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;속성값으로 JS 코드를 작성하면 ok. 그러나 재사용을 못하니 일회성 용도로만 작성할 수 있다.&lt;br /&gt;
+이벤트 핸들러에서 전달하는 함수의 따옴표는 “” 안에 ‘‘를 작성해야한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div onclick=&quot;alert(&apos;happyday!&apos;)&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; addEventListener &lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;on -EventType-과는 다르게 재사용/ 여러개의 핸들러를 등록할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;element.addEventListener(&apos;eventName&apos;, handler(함수), [...options])
+
+예시!
+
+const input = document.getElementById(&apos;button1&apos;)
+input.addEventListener(&apos;click&apos;, () =&amp;gt; alert(window.location))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;그-외에&quot;&gt;그 외에&lt;/h3&gt;
-&lt;div class=&quot;notice--primary&quot;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;블로그 개발
-      &lt;ul&gt;
-        &lt;li&gt;카테고리를 만들자.&lt;/li&gt;
-        &lt;li&gt;폰트 디자인, 크기 수정&lt;/li&gt;
-        &lt;li&gt;디자인 조금 수정해야할듯?&lt;/li&gt;
-        &lt;li&gt;수정할것이 아직 산더미다~!&lt;/li&gt;
-        &lt;li&gt;github 페이지 privite으로… 월별 결제 내년부터 하자!&lt;/li&gt;
-        &lt;li&gt;Google Analytics 등록해보기?&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</content><author><name>LATIsi</name></author><category term="blog" /><summary type="html">기록방법 정리 / 오류 정리와 목표.</summary></entry></feed>
+&lt;p&gt;이벤트의 종류는 굉장히 많지만, 일부분만 정리했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;이벤트 type&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onclick&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;해당요소를 클릭하면 발생하는 이벤트&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onfocus&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;해당요소가 포커스되면 발생하는 이벤트.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onblur&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;입력을 마치고 다른 요소를 클릭시 발생하는 이벤트&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;… 그외에도 많다! 너무많아서&lt;br /&gt;
+https://developer.mozilla.org/ko/docs/Web/Events 페이지를 참조하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;이벤트에서의-this&quot;&gt;이벤트에서의 This&lt;/h2&gt;
+
+&lt;p&gt;이벤트 핸들러 함수를 통해 호출이 되면 this는 함수를 호출한 객체 = 핸들러가 등록된 요소를 가르킨다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;event-객체&quot;&gt;Event 객체&lt;/h2&gt;
+
+&lt;p&gt;이벤트 핸들러로 실행되는 함수에 event라는 객체를 매개변수로 전달 가능.
+이벤트에 관한 내용 (ex : button, detail, layerX, layerY, detail….)등등 다양한 정보를 담고있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;event 객체 프로퍼티&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;currentTarget&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이벤트 핸들러가 등록된 요소를 값으로 가짐(자기자신 반환)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;target&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이벤트가 발생하는것의 자식, 즉 클릭한 자식요소 반환.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;preventDefault&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;기본동작을 막을수 있는 이벤트.반환.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;removeEventListener&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;자바스크립트 이벤트 제거&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;즉, target은 부모에 이벤트핸들을 넣어도 나오는 값은 이벤트가 실행된(클릭된) 자식요소만 나오고,&lt;br /&gt;
+currentTarget은 자식이 무엇이든 이벤트가 생겨도 부모가 자식들을 감싸니 부모가 감싼 요소 전부가 나온다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/91597005/158390508-972d004a-e4bb-4fb0-a2ce-ee9d017a7b3e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;div로 감싸진 input type이 버튼인 요소를 눌렀는데 나온 결과이다.&lt;br /&gt;
+위의 div가 선택된것들은 currentTarget, 아래 input들은 target의 결과.&lt;/p&gt;
+
+&lt;h2 id=&quot;epreventdefault&quot;&gt;e.preventDefault()&lt;/h2&gt;
+
+&lt;p&gt;https://developer.mozilla.org/ko/docs/Web/API/Event/cancelable 참조.
+Event 인터페이스의 cancelable 읽기 전용 속성은 이벤트의 취소가 가능한지를 나타냅니다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><category term="event" /><summary type="html">자바스크립트의 이벤트와 이벤트 관련 this</summary></entry><entry><title type="html">JS - dom 관련</title><link href="http://localhost:4000/js/JS-dom/" rel="alternate" type="text/html" title="JS - dom 관련" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-dom</id><content type="html" xml:base="http://localhost:4000/js/JS-dom/">&lt;h1 id=&quot;dom-document-object-model--문서객체모델&quot;&gt;DOM (Document object model) , 문서객체모델&lt;/h1&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;html코드를 해석하여 트리형태로 구조화 된, 객체가 된 문서.&lt;br /&gt;
+&lt;u&gt;html문서와 자바스크립트를 연결&lt;/u&gt;하여 이용하는게 목적!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;html는 요소(태그)/텍스트 노드로 구분할수 있다.&lt;br /&gt;
+요소노드 - html
+텍스트 노드 - 요소노드 안에 들어가 있는 글자를 의미함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;JS로 html제어시, 가장먼저 dom에 접근하려면 document를 사용해야한다.&lt;br /&gt;
+// &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document는 dom 트리의 최상위 객체이다!&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;문서객체와 텍스트노드를 생성하는 메서드.&lt;br /&gt;
+웹페이지에 아무것도 없을때 노드를 생성할때 사용하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+새 요소 만들기/ 추가/ 삭제&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메소드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.createElement(&apos;태그 이름&apos;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;새로운 요소(문서객체) 만들기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.createTextNode(&apos;텍스트&apos;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;새로운 텍스트 노드를 만들기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.element.appendChild(&apos;노드 이름&apos;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;해당 HTML 요소의 마지막 자식 요소로 추가한다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.element.insertBefore&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(&apos;새로 추가할 요소, 추가되는 장소의 요소 &apos;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;특정 부모의 자식요소 앞에 새로운 요소를 추가하는 메서드.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.removeChild(&apos;삭제할 것&apos;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;문서 객체의 자식노드를 제거한다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;querySelector(), getElementById&lt;/code&gt;로 객체를 선택하고&lt;br /&gt;
+추가하고싶은 요소를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createElement();&lt;/code&gt; 로 만들어서, 안의 내용물은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerText&lt;/code&gt;로 추가한뒤,&lt;br /&gt;
+&lt;u&gt;appendChild  
+insertBefore  
+removeChild&lt;/u&gt;&lt;br /&gt;
+로 붙이거나 삭제해도 ok다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;문서 객체의 속성을 가져오고 지정하는 메서드&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메소드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setAttribute(속성 이름, 값)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;객체 속성 지정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getAttribute(속성 이름)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;객체 속성 가져오기&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;document.createElement(&apos;속성&apos;).setAttribute(&apos;노드 이름&apos;,&apos;값&apos;);
+document.createElement(&apos;속성&apos;).getAttribute(&apos;노드 이름&apos;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;하지만 이렇게 노드를 만들고 이어붙이는것보다 더 쉬운 방법이 있다
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3&gt;선택한 요소를 조회하고 수정할수 있는 프로퍼티&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메소드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;태그의 내부를 의미함. &lt;br /&gt; 사용시 날 것 그대로의 html을 반환함.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerText&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;가져온 내용 중 태그를 제외한&lt;br /&gt; 사람이 읽을수 있는 순수 text 출력, 숨겨진 요소는 반환하지 않음&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textContent&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;innerText와는 달리 스크립트와 style을 포함한&lt;br /&gt; &lt;b&gt;모든요소&lt;/b&gt;를 가지고 온다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;또한 innerHTML으로 문자열을 직접 넣어줘 document.body 안에 +=을 사용하여 직접 내용을 추가해 넣을수가 있다.&lt;br /&gt;
+하지만… innerText같은경우, 최신 계산값 반영을 위해 리플로우가 발생하므로 요소를 가져올시 textContent를 사용하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;문서-객체-가져오기&quot;&gt;문서 객체 가져오기&lt;/h1&gt;
+
+&lt;p&gt;웹페이지에 이미 존재하는 html태그를 JS로 가져오는 방법이다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메소드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.getElementById(id) &lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;받은 인자값과 태그의 &lt;br /&gt; 유일한 id가 일치한 문서객체를 가져옴&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.getElementsByClassName(class) &lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;받은 인자값과 태그의 class값으로 해당하는 요소 &lt;strong&gt;&lt;u&gt;모두 선택&lt;/u&gt;&lt;/strong&gt;, &lt;br /&gt; * Element 뒤에 s가 붙는다 &lt;br /&gt; 동일한 class명이 존재할수있어서 컬렉션 객체를 반환한다!&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.getElementsByTagName(TagName)) &lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;받은 인자와 태그이름이 일치한 문서객체를 &lt;strong&gt;&lt;u&gt;모두 가져옴&lt;/u&gt;&lt;/strong&gt; &lt;br /&gt; * Element 뒤에 s가 붙는다&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.querySelector(cssSelector)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;css 선택자를 기준으로, 동일한 선택자가 여러개라도 &lt;br /&gt; 가장 첫번째 요소만 선택.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.querySelectorAll(cssSelector)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;querySelector와는 달리 일치하는 모든 요소를 선택해 배열로 가지고 온다..&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;document.getElementsByTagName(id) 와 같이, Element&lt;u&gt;s&lt;/u&gt; 로 s가 붙는 모두선택이나 가져옴을 가진것은, n번째 요소를 선택하고 싶을시….&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ex ) document.getElementsByTagName(TagName)[n]&lt;/code&gt;&lt;br /&gt;
+이런식으로 선언해서 n번째 요소를 선택할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;.value = 값&lt;br /&gt;
+.name = 속성중 이름 name&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;템플릿-리터럴&quot;&gt;템플릿 리터럴&lt;/h1&gt;
+
+&lt;p&gt;` `으로 문자열을 표시하는것.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;변수를 표현할시 ${ } 안에 표현한다. 안에 계산식은 전부 ok( 삼항 연산자도! ) 이다.&lt;br /&gt;
+“ “ 와 ‘ ‘ 보다, 표현하는데 있어 문자열이 포함된 변수나 함수같은 경우 편리하게 해결할수 있다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  const contents=&quot;테스트&quot;;
+
+   // 템플릿 리터럴
+  console.log(`안녕하세요, 이건 ${contents} 입니다.`);
+
+  // 기본 &quot;&quot; ,&apos;&apos;
+  console.log(&quot;안녕하세요, 이건 &quot;+contents+&quot; 입니다.&quot;);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;테이블-관련-js-메서드&quot;&gt;테이블 관련 JS 메서드&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;테이블 메서드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;insertRow(행이 들어갈 위치 index)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;새로운 행을 추가. 기본값 -1 , &lt;br /&gt; 기본값이면 가장 뒤에 새로운 행 추가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;insertCell(열이 들어갈 위치 index)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;insertRow로 생성된 행에 열을 추가해주는 셈. 디폴트값 -1 &lt;br /&gt; 기본값이면 가장 뒤에 새로운 열 추가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deleteRow()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;테이블의 행 삭제. -1이 기본값, &lt;br /&gt; 기본값이면 테이블의 가장 마지막행이 삭제&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><category term="dom" /><summary type="html">dom에 대한 기초와 DOM 요소 스타일 메서드, 객체 속성관련 메서드.</summary></entry><entry><title type="html">JS - dom 관련2</title><link href="http://localhost:4000/js/JS-dom-style/" rel="alternate" type="text/html" title="JS - dom 관련2" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-15T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-dom-style</id><content type="html" xml:base="http://localhost:4000/js/JS-dom-style/">&lt;h1 id=&quot;js로-style-값-수정하기&quot;&gt;JS로 Style 값 수정하기.&lt;/h1&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&amp;lt;div id=&quot;hello&quot;&amp;gt; Hi! &amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이라는 html이 있다면, JS로 style을 추가하고 싶을시 어떻게 할까?&lt;/p&gt;
+
+&lt;p&gt;먼저 &lt;u&gt;getEelementById() 나 querySelector()&lt;/u&gt;로 id=”hello”인 div를 잡는다.&lt;/p&gt;
+
+&lt;p&gt;그리고&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;잡은 객체.style.sytle속성 = &apos;값&apos;;&lt;/code&gt;&lt;br /&gt;
+으로 스타일을 지정해주는데, css style 속성은 대부분 background-color 나 font-weight같이&lt;br /&gt;
+하이픈 표기법을 쓰지만, JS에서 css style을 다룰때는 카멜케이스(Camel Case)로 작성해야한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;camelcase란&quot;&gt;CamelCase란?&lt;/h2&gt;
+
+&lt;p&gt;각 단어의 앞문자는 대분자로 작성하지만 처음 문자는 소문자로 작성하는 방법.&lt;/p&gt;
+
+&lt;p&gt;ex) apple-pie = applePie&lt;br /&gt;
+ Bananasnack = bananaSnack&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pascalcase&quot;&gt;Pascalcase&lt;/h2&gt;
+
+&lt;p&gt;모든 단어들의 첫문자는 대문자로…&lt;br /&gt;
+ ex ) apapa sense = ApapaSense&lt;br /&gt;
+silk therapy = SilkTherapy&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;또한, 추가 뿐만이 아니라 원래 css에 있는 클래스를 추가하고 싶을때&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;클래스를 css에 미리 만들고 JS로 추가하기&lt;/li&gt;
+  &lt;li&gt;아예 JS에서 &lt;u&gt;새로&lt;/u&gt; , 또는 직접 수정&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.getElementById(&apos;객체선택&apos;).className={css클래스 이름}&lt;/code&gt; 으로 추가를 해준다.&lt;/p&gt;
+
+&lt;p&gt;또 추가 해주고 싶을때,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.classList.add(&apos;css클래스 이름&apos;)&lt;/code&gt;을 추가해준다.&lt;/p&gt;
+
+&lt;h2 id=&quot;classlist&quot;&gt;classList&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메서드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.add(class 이름)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;기존에 클래스가 &lt;u&gt;있는&lt;/u&gt; 상태에서 &lt;br /&gt; 지정한 class를 추가한다 (이미 있으면 무시)&lt;br /&gt; 또한 , 를 사용하여 여러개의 class를 추가할수 있다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.remove(class 이름)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지정한 class를 삭제한다&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.length(class 이름)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지정한 class를 가진 요소의 개수를 보여준다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.contains(class 이름)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지정한 class가 존재하는지 확인. t/f 값을 반환.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.replace(존재class,새로운class)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;존재하는 class를 새로운 class로 대체&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.item(번호)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지정한 번호의 클래스 값을 보여준다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.toggle(class 이름, 조건문);&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;class가 있으면 삭제, 없으면 add하는 토글기능 메서드&lt;br /&gt; 2번째 파라미터가 있다면 조건문에 맞춰 toggle된다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;그럼-classname과-classlist의-차이점은-무엇일까&quot;&gt;그럼 className과 classList의 차이점은 무엇일까?&lt;/h2&gt;
+
+&lt;p&gt;// 참고 https://ko.javascript.info/styles-and-classes&lt;/p&gt;
+
+&lt;p&gt;className은 &lt;b&gt;클래스 속성값 전체&lt;/b&gt;, 즉 문자열 전체가 바뀐다.&lt;br /&gt;
+그에비해 classList는 &lt;b&gt;개별 클래스를 조작 하고싶을때&lt;/b&gt; 사용하면 된다.&lt;/p&gt;
+
+&lt;p&gt;즉, style 관련해서 JS로 수정하려면 style과 class 프로퍼티로 수정을 하면 된다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><category term="dom" /><summary type="html">dom에 관련된 요소스타일 수정방법</summary></entry><entry><title type="html">JS 콜백함수 &amp;amp; 구조분해 할당</title><link href="http://localhost:4000/js/JS-callback-hell/" rel="alternate" type="text/html" title="JS 콜백함수 &amp;amp; 구조분해 할당" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-callback-hell</id><content type="html" xml:base="http://localhost:4000/js/JS-callback-hell/">&lt;h1 id=&quot;callback&quot;&gt;CALLBACK&lt;/h1&gt;
+
+&lt;p&gt;JS는 실행순서가 보장되지 않는다. (비동기)&lt;br /&gt;
+그래서 콜백은 부르면 타이밍맞춰 오는 함수로, 실행순서를 보장한다. (동기)&lt;/p&gt;
+
+&lt;p&gt;단점으로는&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;가독성 저하&lt;/li&gt;
+  &lt;li&gt;예외처리 불편&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;등등이 있으며,&lt;/p&gt;
+
+&lt;p&gt;해결방법으로는 3가지가 있다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;화살표 함수 (간결하게 보인다.)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;promise&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;promise 이름 = new promise((resolve, reject) =&amp;gt;{ resolve(); reject(); });&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;여기서 resolve는 약속을 지켰을때의 호출이고&lt;br /&gt;
+reject는 약속을 실패했을때의 호출이다.&lt;/p&gt;
+
+    &lt;p&gt;promise가 성공시, .then(()=&amp;gt;{})또는 .catch(){}로 처리한다(리엑트).&lt;br /&gt;
+특히, resolve()나 reject() 안에 인자를 넣으면. .then() 에 인자를 넣어 사용할수 있게되었다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Asyne-await&lt;br /&gt;
+외부정보를 가지고올때 많이 사용한다. 예외처리도 같이 사용하고 있다.&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;asyne function 함수이름 (...) {
+const 객체이름 = await asyncfuntion()
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;이로써, 순차적, 동기적 실행처럼 보이는것이다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;구조분해할당-비구조화-파괴&quot;&gt;구조분해할당 (비구조화, 파괴)&lt;/h1&gt;
+
+&lt;p&gt;인덱스와 키를 기준으로 값을 빼내는 것&lt;br /&gt;
+구조분해할당은 api를 가져올시 위주로 사용하며,&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const test = { a:&apos;값&apos;, b:&apos;값2&apos;, c:&apos;값3&apos;};
+const { a, b, c } = test;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;변수를 키 값으로 한번에 선언이 가능&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위의 a, b, c를 새로운 이름으로 키를 지정하고 싶을시&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const { a:aa, b:bb, c:cc } = test;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;로 선언 가능.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;또한 중첩된 객체로 가져올시…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const { a:aa, price:{won}, acount:{total : 새로운 이름} } = test;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와같이 price같은경우 가져오는 객체 won대로 이름을 won으로 가져올 때이고&lt;br /&gt;
+total같은 경우 새로운 이름으로 지정시켜줄 시 적용가능.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><category term="콜백함수" /><summary type="html">- 콜백 지옥관련 해결방법과 API 구조분해할당으로 값 빼기.</summary></entry><entry><title type="html">JS의 기초적인 정보 3</title><link href="http://localhost:4000/js/JS-base3-this/" rel="alternate" type="text/html" title="JS의 기초적인 정보 3" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-base3-this</id><content type="html" xml:base="http://localhost:4000/js/JS-base3-this/">&lt;p&gt;JS의 배열은 배열을 흉내낸 객체이다.&lt;/p&gt;
+
+&lt;p&gt;배열 길이 메서드&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메서드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.length()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;배열의 길이를 알수 있다. 요소가 담기지않은 빈 배열에 있는것은 empty이다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+배열 요소 추가 메서드&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메서드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.push()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;원래 있는 배열을 직접건들여 추가하는 방식&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pop()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;위치 상 부모(조상)요소를 기준으로 배치&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.concat()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;원래 있는 배열을 건들지 않고, 배열과 새로운 인자요소를 더해&lt;br /&gt;새롭게 배열을 만들어 원본을 유지하는 방식.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...배열이름&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;스프레드 방식(전개연산자).&lt;br /&gt; 매우 간결하게 배열을 합칠 수 있다. 객체나 배열의 내부/ 함수 호출해주는 인자에서 사용한다. &lt;br /&gt; 또한 여러배열을 스프레드 방식으로 가져와 합치는것도 가능하다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...rest&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;한번에 객체나 배열로 파라미터를 받아오는 변수/함수 인자값으로 자주 쓰인다. &lt;br /&gt; 부분집합으로 사용할때도, …rest를 사용한다. ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const {list, ....rest} = 원래 객체&lt;/code&gt; 의 결과는, 원래 객체에서 list가 빠진게 저장이된다. &lt;br /&gt; 꼭, 이름을 …rest로 할필요는 없다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+배열 순회 메서드&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메서드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foreach문&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;array문에서만 사용가능한 순회하며 할일을 할 함수를 지정한뒤 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;배열.forEach(함수)&lt;/code&gt;를 사용한다.&lt;br /&gt; 그저 결과만 조회해줄 뿐이다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.map()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;map은 forEach와는 다르게 처리한것을 새로 배열로 리턴한다.&lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;배열.map()&lt;/code&gt;으로 사용을 한다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;필터링 메서드&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메서드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.filter()&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;참이면 필터에 들어가고 거짓이면 제외된다.&lt;br /&gt; 객체의 키 부분은 큰 따옴표로 감싸야한다. 함수는 화살표 함수를 사용해도 좋다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;this&quot;&gt;this&lt;/h1&gt;
+
+&lt;p&gt;this는 호출한 대상에서 실제 함수를 연결하는 것(바인딩!)&lt;br /&gt;
+브라우저에서 실행시 전역 객체 -&amp;gt; window 객체
+터미널에서 실행시 전역 객체 -&amp;gt; global 객체&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;일반 함수 호출시 this&lt;br /&gt;
+내부함수안에 있는 this는 전역 개체로 바인딩된다.&lt;/li&gt;
+  &lt;li&gt;객체 호출시 this는 그 메서드를 호출한 객체로 바인딩 이된다.&lt;/li&gt;
+  &lt;li&gt;생성자 함수를 호출시 this는 생성자 함수를 통해 생성해 반환되는 객체로 바인딩이된다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;내부함수-this-관련-문법&quot;&gt;내부함수 this 관련 문법&lt;/h2&gt;
+
+&lt;p&gt;apply, call, bind&lt;br /&gt;
+apply와 call은 함수를 호출하는 함수이다. (첫번째 인자를 this로 세팅하고싶은 객체를 넘겨준다.)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;apply&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;객체.apply(객체, [&quot;파라미터&quot;]);&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;call&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;객체.call(객체,&quot;파라미터&quot;);&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;bind&lt;br /&gt;
+bound 함수(bound() = this를 bind에 넣은것)를 리턴해준다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;apply와 call의 차이점은, apply함수는 두번째 인자부터 필요한 파라미터를 전부 입력해야하는 방식이다.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><summary type="html">배열 추가, 순회, 필터링 메서드와 this 관련 정리</summary></entry><entry><title type="html">JS의 기초적인 정보 2</title><link href="http://localhost:4000/js/JS-base2-variables/" rel="alternate" type="text/html" title="JS의 기초적인 정보 2" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-base2-variables</id><content type="html" xml:base="http://localhost:4000/js/JS-base2-variables/">&lt;p&gt;수업받았던 내용정리와 https://ko.javascript.info/types 홈페이지 참고.&lt;/p&gt;
+
+&lt;p&gt;JS에서의 변수 선언은 var, let, const로 이루어진다. 더불어 JS의 변수에 저장되는 값을 언제든지 바꿀수있다. (동적타입언어.)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;변수 종류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;전역변수이다. 함수가 아닌 블록에서 선언한 변수도 전역변수로 취급된다. &lt;br /&gt; 중복된 이름을 선언할 수 있고, 변수의 불변성도 보장하지않는다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;중복선언을 못하며, 블록레벨 스코프이다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;let과 비슷하지만, 값 재선언도 하지 못한다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tip! : 이스케이프 문자 -&amp;gt; 문장부호로 쓸 단어앞에 \ 를 붙여준다.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;자료형이란 &lt;u&gt;프로그래밍단계에서 미리 데이터 종류 식별&lt;/u&gt;을 하여 데이터 처리를 하는것!&lt;/p&gt;
+
+&lt;p&gt;그리고 자료형은&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;일반적 자료형&lt;/li&gt;
+  &lt;li&gt;객체&lt;/li&gt;
+  &lt;li&gt;symbol&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;가 있다.&lt;br /&gt;
+변수의 자료형을 알고싶으면 typeof를 사용하여 변수의 자료명을 반환시키자&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;typeof 변수명  -  연산자
+typeof (변수명)  -  함수
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;tip: null은 아무것도 없는것처럼 보이지만 일단 값은 할당되어있기에 object라는 값이 나온다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;일반적 자료형
+    &lt;ul&gt;
+      &lt;li&gt;숫자형&lt;/li&gt;
+      &lt;li&gt;문자형&lt;/li&gt;
+      &lt;li&gt;BingInt (최근!)&lt;/li&gt;
+      &lt;li&gt;boolean 논리&lt;/li&gt;
+      &lt;li&gt;undefined&lt;/li&gt;
+      &lt;li&gt;null&lt;/li&gt;
+      &lt;li&gt;객체&lt;/li&gt;
+      &lt;li&gt;simbol&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;number&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;숫자형은 정수, 부동소수점을 나타냄.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BigInt&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;길이에 상관없이 정수로 표현, &lt;br /&gt; 암호작업같은 큰 숫자가 필요할 때 사용.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;” “ , ‘ ‘ , ` ` 으로 표시한다.&lt;br /&gt; length(길이) / replace(일부분 바꾸기) / concat(합침) / slice(추출) / search(찾기) 같은 문자열 메서드를 사용할 수 있다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boolean&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;논리타입, true와 false만 나온다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;null은 아무것도 없는것처럼 보이지만 사실은 undefined와 다르게 비어있는값이다.&lt;br /&gt; 알수없는 값을 나타낼때 사용.&lt;br /&gt; 일치연산자(===)로 확인하는것이 좋다. &lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tip : 동등연산자 (==)&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;null과 비슷해보이지만 값이 할당된 null과는 다르게 아무런 값도 할당되지않은것.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;simbol&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;변경 불가능, 다른값과 중복되지않는 고유한 값. (표준 확장, 고유한 상수값….)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;객체&quot;&gt;객체&lt;/h1&gt;
+
+&lt;p&gt;JS는 함수또한 객체이다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;변수에 대입이 가능하다.&lt;/li&gt;
+  &lt;li&gt;다른 함수의 인자나 리턴값으로 활용가능 하다. 함수도 인자로 들어갈 수 있다.&lt;/li&gt;
+  &lt;li&gt;배열, 객체등의 자료구조에 대입이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wrapper-객체&quot;&gt;wrapper 객체&lt;/h2&gt;
+
+&lt;p&gt;일반 자료형을 유용한 메서드로 감싸는것, 종류로는&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Number&lt;/li&gt;
+  &lt;li&gt;String&lt;/li&gt;
+  &lt;li&gt;boolen&lt;/li&gt;
+  &lt;li&gt;Symbol&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;wrapper는 일시적으로 임시 객체를 만들어 프로퍼티를 참조시 사용하게 하고, 끝나면 사라진다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;익명함수-화살표-함수&quot;&gt;익명함수, 화살표 함수&lt;/h1&gt;
+
+&lt;p&gt;익명함수는 함수 이름이 없는것이 특징이다.&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()(); &lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ex ) (function () { })();&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;화살표함수는 es6 이후로 나오것이고, 콜백함수에서 간단히 작성을 할 수있는 장점이 있다. 기본적인 구조&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(매개변수) =&amp;gt; { 함수본문, return 리턴값}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그러나 함수 본문 1줄 일시, 함수 본문의 중가로를 생략하고 return도 암묵적으로 생략한다.&lt;/p&gt;
+
+&lt;p&gt;` (매개변수) =&amp;gt; 함수본문(리턴값)`&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;또한 매개변수가 하나일시 매개변수의 소가로를 생략 가능하다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;매개변수 =&amp;gt; {함수본문 return 리턴값}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;생성자-함수&quot;&gt;생성자 함수&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;비슷한 구조를 가진 객체를 찍어내는것.&lt;/p&gt;
+
+&lt;p&gt;` const 새로운 생성자 이름 = new 함수 (새로운 함수를 만들때 필요한 인자)`&lt;br /&gt;
+로, 생성자 함수를 만들수 있다. 일반함수와의 비교방법은 바로 new가 붙냐 안붙냐의 차이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;symbol-함수&quot;&gt;Symbol 함수&lt;/h1&gt;
+
+&lt;p&gt;https://another-light.tistory.com/105 를 참고.
+심볼 값을 전해주는 함수(메서드)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;symbol에서 쓰는 함수&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for(문자열)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;인수로 받은 문자열로 전역 심볼 레지스트리에 키와 일치하는 심볼값 검색. &lt;br /&gt; (있으면 반환, 없으면 새로 생성해 반환)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keyFor(심볼 변수)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;심볼 값으로 전역 심볼 레지스트리에 저장된 심볼 값 키를 가져옴&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;심볼로 프로퍼티를 은닉할 수 있다.(!!)&lt;br /&gt;
+Object.getOwnPropertySymbols 메서드를 사용시 찾을수는 있지만 for in문이나 Object.keys같은 걸로는 못찾는다.&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><summary type="html">JS의 변수 / 기본적인 데이터 형식에 관해 정리</summary></entry><entry><title type="html">JS의 기초적인 정보 1</title><link href="http://localhost:4000/js/JS-base1/" rel="alternate" type="text/html" title="JS의 기초적인 정보 1" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/js/JS-base1</id><content type="html" xml:base="http://localhost:4000/js/JS-base1/">&lt;p&gt;html은 정보구조, css는 스타일, JS는 상호작용 로직에 가깝다&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;JS는 각각 다른 웹 브라우저에서 동작하는, &lt;u&gt;객체기반 스크립트 프로그래밍 언어&lt;/u&gt;이기 때문에, 호환을 위해 표준이 꼭 필요하다. 그래서 나온 것이 &lt;u&gt;ECMAscript&lt;/u&gt;이다. (es1, es6같은..)&lt;/p&gt;
+
+&lt;p&gt;크로스 브라우징 이슈&lt;/p&gt;
+
+&lt;p&gt;표준 웹기술(ECMAscrip)으로 구현되는기술을 비슷하게 만드는것과 동시에 한쪽에 최적화가 치우치지않도록 공통요소 사용!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;개발자-도구&quot;&gt;개발자 도구&lt;/h2&gt;
+
+&lt;p&gt;&lt;img width=&quot;598&quot; alt=&quot;image&quot; src=&quot;https://user-images.githubusercontent.com/91597005/158096308-2d1e45ef-7ff7-45d4-a882-6f382f121a4b.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;여러 탭들이 많으나 많이 쓰는 일부분만 정리.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;network&quot;&gt;network&lt;/h2&gt;
+
+    &lt;p&gt;해당 페이지에서 어떤 파일을 받는지 목록을 확인하는 용도 &lt;br /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/91597005/158097223-16c7fe55-3106-46be-ab18-fe1a914cdaa4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;console&quot;&gt;console&lt;/h2&gt;
+
+    &lt;p&gt;간단한 명령어 출력. &lt;br /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/91597005/158097116-4a733e18-5dd0-437a-b195-2c10e8d5358c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;shift + enter = 콘솔창에서 다음줄로 넘어가기&lt;/li&gt;
+      &lt;li&gt;clear = 콘솔 화면 초기화&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;elements&quot;&gt;elements&lt;/h2&gt;
+
+    &lt;p&gt;html, css 실험해보는 용도 &lt;br /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/91597005/158097365-bb36bbd2-cbd3-4ad8-b12e-8e82ed08acf7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;sources&quot;&gt;sources&lt;/h2&gt;
+    &lt;p&gt;소스코드를 tree형태로 보여주며, JS디버깅 용도.&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/91597005/158097270-20765629-eea7-4966-a36b-e66b0bec2b44.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;watch&lt;br /&gt;
+내가 관심있는 코드, 변수를 등록해 현재와 변화하는것을 볼 수가 있다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;breakpoints&lt;br /&gt;
+일시정지 지정한 코드가 실행시, 정지하여 자세하게 확인할수 있다&lt;/p&gt;
+
+    &lt;p&gt;&lt;img width=&quot;170&quot; alt=&quot;image&quot; src=&quot;https://user-images.githubusercontent.com/91597005/158097510-b11a502e-8b06-4b61-ab6c-0bc015101ab2.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;network-1&quot;&gt;network&lt;/h2&gt;
+
+    &lt;p&gt;해당 페이지에서 어떤 파일을 받는지 목록을 확인하는 용도 &lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;html은 위에서 아래로 순차적으로 실행하기에 JS의 스크립트는 맨 아래에 작성하는것이 좋다.&lt;br /&gt;
+스크립트가 맨 위에 있다면 렌더링도중 실행될 코드가 오류가 날 가능성이 높다.&lt;/p&gt;
+
+&lt;p&gt;그런데…&lt;br /&gt;
+body 안에 쓰는것과 밖에 쓰는것의 차이는??&lt;br /&gt;
+밖에 쓴다면 body태그의 렌더링이 &lt;u&gt;우선시 된뒤에&lt;/u&gt; 실행이 된다!&lt;/p&gt;
+
+&lt;p&gt;배열에는 [] 를 쓰고,&lt;br /&gt;
+객체 생성시에는 {} 를 쓴다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;메소드 이름&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;className&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;class 이름 바꿀때 사용&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tip: 메서드를 실행시, 반드시 ( )를 해주어야한다.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;새로운 키 값 추가/삭제&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  객체이름. 새로운 키 = &quot;값&quot;;
+  delete 객체이름. 새로운 키;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;특정 객체의 key 확인하기&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;object.keys(객체 이름);&lt;/li&gt;
+  &lt;li&gt;for~ in 문으로 객체 순회&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;indexOf() 문자열을 검색하는 메서드
+값이 없을때 -1을 반환함.&lt;/p&gt;</content><author><name>LATIsi</name></author><category term="JS" /><category term="JS" /><summary type="html">JS관련 기초적인 정의 정리</summary></entry></feed>

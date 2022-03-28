@@ -2,7 +2,10 @@
 title: "일반 css와 sass"
 excerpt: "특히 react에서 쓰이는 css들"
 date: 2022-01-15
-categories: Css
+categories:
+  - CSS
+tags:
+  - CSS
 last_modified_at: 2022-01-30
 ---
 

@@ -2,7 +2,10 @@
 title: "JS의 기초적인 정보 2 "
 excerpt: "JS의 변수 / 기본적인 데이터 형식에 관해 정리"
 date: 2022-03-14
-categories: JS
+categories:
+  - JS
+tags:
+  - JS
 last_modified_at: 2022-03-14
 ---
 

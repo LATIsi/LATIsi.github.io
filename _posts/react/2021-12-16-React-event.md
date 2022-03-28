@@ -2,7 +2,11 @@
 title: "React 이벤트 정리"
 excerpt: " "
 date: 2021-12-16
-categories: React
+categories:
+  - React
+tags:
+  - React
+  - event
 last_modified_at: 2021-12-16
 ---
 
