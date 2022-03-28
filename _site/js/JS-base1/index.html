@@ -1,0 +1,136 @@
+<p>html은 정보구조, css는 스타일, JS는 상호작용 로직에 가깝다</p>
+
+<hr />
+
+<p>JS는 각각 다른 웹 브라우저에서 동작하는, <u>객체기반 스크립트 프로그래밍 언어</u>이기 때문에, 호환을 위해 표준이 꼭 필요하다. 그래서 나온 것이 <u>ECMAscript</u>이다. (es1, es6같은..)</p>
+
+<p>크로스 브라우징 이슈</p>
+
+<p>표준 웹기술(ECMAscrip)으로 구현되는기술을 비슷하게 만드는것과 동시에 한쪽에 최적화가 치우치지않도록 공통요소 사용!</p>
+
+<hr />
+
+<h2 id="개발자-도구">개발자 도구</h2>
+
+<p><img width="598" alt="image" src="https://user-images.githubusercontent.com/91597005/158096308-2d1e45ef-7ff7-45d4-a882-6f382f121a4b.png" /></p>
+
+<p>여러 탭들이 많으나 많이 쓰는 일부분만 정리.</p>
+
+<ul>
+  <li>
+    <h2 id="network">network</h2>
+
+    <p>해당 페이지에서 어떤 파일을 받는지 목록을 확인하는 용도 <br />
+<img src="https://user-images.githubusercontent.com/91597005/158097223-16c7fe55-3106-46be-ab18-fe1a914cdaa4.png" alt="image" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h2 id="console">console</h2>
+
+    <p>간단한 명령어 출력. <br />
+<img src="https://user-images.githubusercontent.com/91597005/158097116-4a733e18-5dd0-437a-b195-2c10e8d5358c.png" alt="image" /></p>
+
+    <ul>
+      <li>shift + enter = 콘솔창에서 다음줄로 넘어가기</li>
+      <li>clear = 콘솔 화면 초기화</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h2 id="elements">elements</h2>
+
+    <p>html, css 실험해보는 용도 <br />
+<img src="https://user-images.githubusercontent.com/91597005/158097365-bb36bbd2-cbd3-4ad8-b12e-8e82ed08acf7.png" alt="image" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h2 id="sources">sources</h2>
+    <p>소스코드를 tree형태로 보여주며, JS디버깅 용도.<br /></p>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/91597005/158097270-20765629-eea7-4966-a36b-e66b0bec2b44.png" alt="image" /></p>
+
+<ul>
+  <li>watch<br />
+내가 관심있는 코드, 변수를 등록해 현재와 변화하는것을 볼 수가 있다.</li>
+  <li>
+    <p>breakpoints<br />
+일시정지 지정한 코드가 실행시, 정지하여 자세하게 확인할수 있다</p>
+
+    <p><img width="170" alt="image" src="https://user-images.githubusercontent.com/91597005/158097510-b11a502e-8b06-4b61-ab6c-0bc015101ab2.png" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h2 id="network-1">network</h2>
+
+    <p>해당 페이지에서 어떤 파일을 받는지 목록을 확인하는 용도 <br /></p>
+
+    <p><br /></p>
+  </li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<p>html은 위에서 아래로 순차적으로 실행하기에 JS의 스크립트는 맨 아래에 작성하는것이 좋다.<br />
+스크립트가 맨 위에 있다면 렌더링도중 실행될 코드가 오류가 날 가능성이 높다.</p>
+
+<p>그런데…<br />
+body 안에 쓰는것과 밖에 쓰는것의 차이는??<br />
+밖에 쓴다면 body태그의 렌더링이 <u>우선시 된뒤에</u> 실행이 된다!</p>
+
+<p>배열에는 [] 를 쓰고,<br />
+객체 생성시에는 {} 를 쓴다.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>메소드 이름</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">className</code></td>
+      <td style="text-align: center">class 이름 바꿀때 사용</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">tip: 메서드를 실행시, 반드시 ( )를 해주어야한다.</code></p>
+
+<p>새로운 키 값 추가/삭제</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  객체이름. 새로운 키 = "값";
+  delete 객체이름. 새로운 키;
+</code></pre></div></div>
+
+<p>특정 객체의 key 확인하기</p>
+
+<ul>
+  <li>object.keys(객체 이름);</li>
+  <li>for~ in 문으로 객체 순회</li>
+</ul>
+
+<p>indexOf() 문자열을 검색하는 메서드
+값이 없을때 -1을 반환함.</p>

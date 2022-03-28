@@ -1,0 +1,100 @@
+<h1 id="js로-style-값-수정하기">JS로 Style 값 수정하기.</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;div id="hello"&gt; Hi! &lt;/div&gt;
+
+</code></pre></div></div>
+
+<p>이라는 html이 있다면, JS로 style을 추가하고 싶을시 어떻게 할까?</p>
+
+<p>먼저 <u>getEelementById() 나 querySelector()</u>로 id=”hello”인 div를 잡는다.</p>
+
+<p>그리고<br />
+<code class="language-plaintext highlighter-rouge">잡은 객체.style.sytle속성 = '값';</code><br />
+으로 스타일을 지정해주는데, css style 속성은 대부분 background-color 나 font-weight같이<br />
+하이픈 표기법을 쓰지만, JS에서 css style을 다룰때는 카멜케이스(Camel Case)로 작성해야한다.</p>
+
+<h2 id="camelcase란">CamelCase란?</h2>
+
+<p>각 단어의 앞문자는 대분자로 작성하지만 처음 문자는 소문자로 작성하는 방법.</p>
+
+<p>ex) apple-pie = applePie<br />
+ Bananasnack = bananaSnack</p>
+
+<p><br /></p>
+
+<h2 id="pascalcase">Pascalcase</h2>
+
+<p>모든 단어들의 첫문자는 대문자로…<br />
+ ex ) apapa sense = ApapaSense<br />
+silk therapy = SilkTherapy</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>또한, 추가 뿐만이 아니라 원래 css에 있는 클래스를 추가하고 싶을때</p>
+
+<ol>
+  <li>클래스를 css에 미리 만들고 JS로 추가하기</li>
+  <li>아예 JS에서 <u>새로</u> , 또는 직접 수정</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">document.getElementById('객체선택').className={css클래스 이름}</code> 으로 추가를 해준다.</p>
+
+<p>또 추가 해주고 싶을때,
+<code class="language-plaintext highlighter-rouge">.classList.add('css클래스 이름')</code>을 추가해준다.</p>
+
+<h2 id="classlist">classList</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>메서드 이름</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.add(class 이름)</code></td>
+      <td style="text-align: center">기존에 클래스가 <u>있는</u> 상태에서 <br /> 지정한 class를 추가한다 (이미 있으면 무시)<br /> 또한 , 를 사용하여 여러개의 class를 추가할수 있다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.remove(class 이름)</code></td>
+      <td style="text-align: center">지정한 class를 삭제한다</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.length(class 이름)</code></td>
+      <td style="text-align: center">지정한 class를 가진 요소의 개수를 보여준다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.contains(class 이름)</code></td>
+      <td style="text-align: center">지정한 class가 존재하는지 확인. t/f 값을 반환.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.replace(존재class,새로운class)</code></td>
+      <td style="text-align: center">존재하는 class를 새로운 class로 대체</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.item(번호)</code></td>
+      <td style="text-align: center">지정한 번호의 클래스 값을 보여준다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.toggle(class 이름, 조건문);</code></td>
+      <td style="text-align: center">class가 있으면 삭제, 없으면 add하는 토글기능 메서드<br /> 2번째 파라미터가 있다면 조건문에 맞춰 toggle된다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="그럼-classname과-classlist의-차이점은-무엇일까">그럼 className과 classList의 차이점은 무엇일까?</h2>
+
+<p>// 참고 https://ko.javascript.info/styles-and-classes</p>
+
+<p>className은 <b>클래스 속성값 전체</b>, 즉 문자열 전체가 바뀐다.<br />
+그에비해 classList는 <b>개별 클래스를 조작 하고싶을때</b> 사용하면 된다.</p>
+
+<p>즉, style 관련해서 JS로 수정하려면 style과 class 프로퍼티로 수정을 하면 된다.</p>

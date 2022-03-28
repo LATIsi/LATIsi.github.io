@@ -1,0 +1,219 @@
+<p>수업받았던 내용정리와 https://ko.javascript.info/types 홈페이지 참고.</p>
+
+<p>JS에서의 변수 선언은 var, let, const로 이루어진다. 더불어 JS의 변수에 저장되는 값을 언제든지 바꿀수있다. (동적타입언어.)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>변수 종류</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">var</code></td>
+      <td style="text-align: center">전역변수이다. 함수가 아닌 블록에서 선언한 변수도 전역변수로 취급된다. <br /> 중복된 이름을 선언할 수 있고, 변수의 불변성도 보장하지않는다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">let</code></td>
+      <td style="text-align: center">중복선언을 못하며, 블록레벨 스코프이다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">const</code></td>
+      <td style="text-align: center">let과 비슷하지만, 값 재선언도 하지 못한다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">tip! : 이스케이프 문자 -&gt; 문장부호로 쓸 단어앞에 \ 를 붙여준다.</code></p>
+
+<p><br /></p>
+
+<hr />
+
+<p>자료형이란 <u>프로그래밍단계에서 미리 데이터 종류 식별</u>을 하여 데이터 처리를 하는것!</p>
+
+<p>그리고 자료형은</p>
+
+<ol>
+  <li>일반적 자료형</li>
+  <li>객체</li>
+  <li>symbol</li>
+</ol>
+
+<p>가 있다.<br />
+변수의 자료형을 알고싶으면 typeof를 사용하여 변수의 자료명을 반환시키자</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typeof 변수명  -  연산자
+typeof (변수명)  -  함수
+</code></pre></div></div>
+
+<p>tip: null은 아무것도 없는것처럼 보이지만 일단 값은 할당되어있기에 object라는 값이 나온다.</p>
+
+<hr />
+
+<p><br /></p>
+
+<ol>
+  <li>일반적 자료형
+    <ul>
+      <li>숫자형</li>
+      <li>문자형</li>
+      <li>BingInt (최근!)</li>
+      <li>boolean 논리</li>
+      <li>undefined</li>
+      <li>null</li>
+      <li>객체</li>
+      <li>simbol</li>
+    </ul>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">number</code></td>
+      <td style="text-align: center">숫자형은 정수, 부동소수점을 나타냄.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BigInt</code></td>
+      <td style="text-align: center">길이에 상관없이 정수로 표현, <br /> 암호작업같은 큰 숫자가 필요할 때 사용.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td style="text-align: center">” “ , ‘ ‘ , ` ` 으로 표시한다.<br /> length(길이) / replace(일부분 바꾸기) / concat(합침) / slice(추출) / search(찾기) 같은 문자열 메서드를 사용할 수 있다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td style="text-align: center">논리타입, true와 false만 나온다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">null</code></td>
+      <td style="text-align: center">null은 아무것도 없는것처럼 보이지만 사실은 undefined와 다르게 비어있는값이다.<br /> 알수없는 값을 나타낼때 사용.<br /> 일치연산자(===)로 확인하는것이 좋다. <br /> <code class="language-plaintext highlighter-rouge">tip : 동등연산자 (==)</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">undefined</code></td>
+      <td style="text-align: center">null과 비슷해보이지만 값이 할당된 null과는 다르게 아무런 값도 할당되지않은것.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">simbol</code></td>
+      <td style="text-align: center">변경 불가능, 다른값과 중복되지않는 고유한 값. (표준 확장, 고유한 상수값….)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><br />
+<br /></p>
+
+<h1 id="객체">객체</h1>
+
+<p>JS는 함수또한 객체이다.</p>
+
+<ul>
+  <li>변수에 대입이 가능하다.</li>
+  <li>다른 함수의 인자나 리턴값으로 활용가능 하다. 함수도 인자로 들어갈 수 있다.</li>
+  <li>배열, 객체등의 자료구조에 대입이 가능하다.</li>
+</ul>
+
+<h2 id="wrapper-객체">wrapper 객체</h2>
+
+<p>일반 자료형을 유용한 메서드로 감싸는것, 종류로는</p>
+
+<ul>
+  <li>Number</li>
+  <li>String</li>
+  <li>boolen</li>
+  <li>Symbol</li>
+</ul>
+
+<p>이 있다.</p>
+
+<p><br /></p>
+
+<p>wrapper는 일시적으로 임시 객체를 만들어 프로퍼티를 참조시 사용하게 하고, 끝나면 사라진다.</p>
+
+<p><br /><br /></p>
+
+<h1 id="익명함수-화살표-함수">익명함수, 화살표 함수</h1>
+
+<p>익명함수는 함수 이름이 없는것이 특징이다.<br />
+<code class="language-plaintext highlighter-rouge">()(); </code><br />
+<code class="language-plaintext highlighter-rouge">ex ) (function () { })();</code> .</p>
+
+<p><br /></p>
+
+<p>화살표함수는 es6 이후로 나오것이고, 콜백함수에서 간단히 작성을 할 수있는 장점이 있다. 기본적인 구조</p>
+
+<p><code class="language-plaintext highlighter-rouge">(매개변수) =&gt; { 함수본문, return 리턴값}</code></p>
+
+<p><br /></p>
+
+<p>그러나 함수 본문 1줄 일시, 함수 본문의 중가로를 생략하고 return도 암묵적으로 생략한다.</p>
+
+<p>` (매개변수) =&gt; 함수본문(리턴값)`</p>
+
+<p><br /></p>
+
+<p>또한 매개변수가 하나일시 매개변수의 소가로를 생략 가능하다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">매개변수 =&gt; {함수본문 return 리턴값}</code></p>
+
+<p><br /></p>
+
+<hr />
+
+<h2 id="생성자-함수">생성자 함수</h2>
+
+<p><br /></p>
+
+<p>비슷한 구조를 가진 객체를 찍어내는것.</p>
+
+<p>` const 새로운 생성자 이름 = new 함수 (새로운 함수를 만들때 필요한 인자)`<br />
+로, 생성자 함수를 만들수 있다. 일반함수와의 비교방법은 바로 new가 붙냐 안붙냐의 차이다.</p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h1 id="symbol-함수">Symbol 함수</h1>
+
+<p>https://another-light.tistory.com/105 를 참고.
+심볼 값을 전해주는 함수(메서드)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>symbol에서 쓰는 함수</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">for(문자열)</code></td>
+      <td style="text-align: center">인수로 받은 문자열로 전역 심볼 레지스트리에 키와 일치하는 심볼값 검색. <br /> (있으면 반환, 없으면 새로 생성해 반환)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">keyFor(심볼 변수)</code></td>
+      <td style="text-align: center">심볼 값으로 전역 심볼 레지스트리에 저장된 심볼 값 키를 가져옴</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p>심볼로 프로퍼티를 은닉할 수 있다.(!!)<br />
+Object.getOwnPropertySymbols 메서드를 사용시 찾을수는 있지만 for in문이나 Object.keys같은 걸로는 못찾는다.</p>
+
+<hr />

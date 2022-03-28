@@ -1,0 +1,170 @@
+I"�<h1 id="이벤트-event">이벤트 (event)</h1>
+
+<p>프로그램에 의해 감지되고 처리 될 수 있는 동작이나 사건</p>
+
+<p><br /></p>
+
+<p>브라우저에서 감지할 수 있는것들 대부분 모두가 이벤트와 같당! (키보드, 마우스, 문서, css….)</p>
+
+<p>이벤트는 브라우저에서 발생하지만, 이벤트에 특정코드를 등록하지않으면 이벤트가 실행되지않는다.<br />
+그래서 등록하기위해 <u><b>이벤트 핸들러</b></u>를 사용한다.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>필요한 목록</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">event target</code></td>
+      <td style="text-align: center">이벤트가 일어나는 객체/요소, 지정해둘 요소(엘리먼트)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">event listener</code></td>
+      <td style="text-align: center">이벤트 핸들러로도 불린다, 이벤트 발생시 작동시킬 특정코드</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">event type</code></td>
+      <td style="text-align: center">이벤트의 종류 (click, scroll,focus등등…)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>그중에서 event type으로써, event 앞에 <u>on</u>을 붙인다.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2> on -EventType- </h2>
+
+<p><br /></p>
+
+<p>속성값으로 JS 코드를 작성하면 ok. 그러나 재사용을 못하니 일회성 용도로만 작성할 수 있다.<br />
+이벤트 핸들러에서 전달하는 함수의 따옴표는 “” 안에 ‘‘를 작성해야한다.</p>
+
+<p><br /></p>
+
+<p>ex) <code class="language-plaintext highlighter-rouge">&lt;div onclick="alert('happyday!')"&gt;&lt;/div&gt;</code></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2> addEventListener </h2>
+
+<p><br /></p>
+
+<p>on -EventType-과는 다르게 재사용/ 여러개의 핸들러를 등록할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>element.addEventListener('eventName', handler(함수), [...options])
+
+예시!
+
+const input = document.getElementById('button1')
+input.addEventListener('click', () =&gt; alert(window.location))
+</code></pre></div></div>
+
+<p>이벤트의 종류는 굉장히 많지만, 일부분만 정리했다.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>이벤트 type</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onclick</code></td>
+      <td style="text-align: center">해당요소를 클릭하면 발생하는 이벤트</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onfocus</code></td>
+      <td style="text-align: center">해당요소가 포커스되면 발생하는 이벤트.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onblur</code></td>
+      <td style="text-align: center">입력을 마치고 다른 요소를 클릭시 발생하는 이벤트</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>… 그외에도 많다! 너무많아서<br />
+https://developer.mozilla.org/ko/docs/Web/Events 페이지를 참조하자.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="이벤트에서의-this">이벤트에서의 This</h2>
+
+<p>이벤트 핸들러 함수를 통해 호출이 되면 this는 함수를 호출한 객체 = 핸들러가 등록된 요소를 가르킨다.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="event-객체">Event 객체</h2>
+
+<p>이벤트 핸들러로 실행되는 함수에 event라는 객체를 매개변수로 전달 가능.
+이벤트에 관한 내용 (ex : button, detail, layerX, layerY, detail….)등등 다양한 정보를 담고있다.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>event 객체 프로퍼티</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">currentTarget</code></td>
+      <td style="text-align: center">이벤트 핸들러가 등록된 요소를 값으로 가짐(자기자신 반환)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">target</code></td>
+      <td style="text-align: center">이벤트가 발생하는것의 자식, 즉 클릭한 자식요소 반환.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preventDefault</code></td>
+      <td style="text-align: center">기본동작을 막을수 있는 이벤트.반환.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">removeEventListener</code></td>
+      <td style="text-align: center">자바스크립트 이벤트 제거</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>즉, target은 부모에 이벤트핸들을 넣어도 나오는 값은 이벤트가 실행된(클릭된) 자식요소만 나오고,<br />
+currentTarget은 자식이 무엇이든 이벤트가 생겨도 부모가 자식들을 감싸니 부모가 감싼 요소 전부가 나온다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/91597005/158390508-972d004a-e4bb-4fb0-a2ce-ee9d017a7b3e.png" alt="image" /></p>
+
+<p>div로 감싸진 input type이 버튼인 요소를 눌렀는데 나온 결과이다.<br />
+위의 div가 선택된것들은 currentTarget, 아래 input들은 target의 결과.</p>
+
+<h2 id="epreventdefault">e.preventDefault()</h2>
+
+<p>https://developer.mozilla.org/ko/docs/Web/API/Event/cancelable 참조.
+Event 인터페이스의 cancelable 읽기 전용 속성은 이벤트의 취소가 가능한지를 나타냅니다.</p>
+:ET

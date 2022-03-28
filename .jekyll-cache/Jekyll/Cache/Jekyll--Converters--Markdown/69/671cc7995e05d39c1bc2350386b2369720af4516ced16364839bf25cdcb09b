@@ -1,0 +1,91 @@
+I"�
+<p>JS에서 비동기 처리를 할시,</p>
+
+<ul>
+  <li>setTimeout</li>
+  <li>콜백함수</li>
+  <li>Promise (콜백지옥 해결방법)</li>
+  <li>async / await</li>
+</ul>
+
+<p>을 사용한다.</p>
+
+<p>특히 Promise같은 경우,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test(0).then(number =&gt; {
+            console.log(number);
+            return test(number);
+        }).then(number =&gt; {
+            console.log(number);
+            return test(number);
+        }).then(number =&gt; {
+            console.log(number);
+            return test(number);
+        });
+</code></pre></div></div>
+
+<p>…같이. .then함수를 사용해 콜백지옥을 줄일수 있다.</p>
+
+<h2 id="asyncawait">async/await</h2>
+
+<p>async/await는 사용하려는 function 앞부분에 async를 추가하고,<br />
+함수내부에서 Promise 앞에 await를 호출하여 Promise가 끝날때까지 기다리며, 결과값을 변수에 담을수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>async function Task(){
+    try{
+        let result = await Promise(1);
+        console.log(result);
+        result = await Promise(result);
+        console.log(result);
+        result = await Promise(result);
+        console.log(result);
+        result = await Promise(result);
+        console.log(result);
+    }catch(e){
+        console.log(e);
+    }
+}
+</code></pre></div></div>
+
+<h2 id="axios-api-호출">axios API 호출</h2>
+
+<p>axios는 HTTP요청을 Promise기법으로 처리하는 라이브러리다!</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm install axios</code></p>
+
+<p>으로 설치한뒤, import해오면 된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import axios from 'axios'
+
+.....
+
+axios.get('링크').then(response=&gt;{
+    setData(response.data);
+});
+
+</code></pre></div></div>
+
+<p>이런식으로 사용이 가능하다.<br />
+또는 async를 사용시, try/catch문을 사용해 가져올수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import axios from 'axios'
+
+.....
+
+const onClick = async () =&gt;{
+    try{
+        const response = await axios.get('링크',);
+        setData(response.data);
+    }catch(e){
+        console.log(e);
+    }
+};
+</code></pre></div></div>
+
+<p>이런식으로 async () =&gt; { } 와 같은 형식으로 적용할 수 있다.</p>
+
+<hr />
+
+<p><strong>useEffect에 등록하는 함수에 async를 붙이지 말자!</strong><br />
+(useEffet에서 반환해야하는 것은 뒷정리 함수이기 때문!!)</p>
+:ET

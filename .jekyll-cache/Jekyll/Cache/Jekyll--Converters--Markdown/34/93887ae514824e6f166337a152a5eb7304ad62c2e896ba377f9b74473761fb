@@ -1,0 +1,36 @@
+I"�<p>JS 책을 보며 공부를 하다가 객체의 with과 in 관련해서 이해한것을 정리한 포스트이다.</p>
+
+<h2 id="in">in</h2>
+
+<p>in은 해당 키가 객체 안에 있는지 확인하고 있으면 true, 없으면 false를 반환한다.<br />
+ex) ‘찾으려는 속성’ in 객체</p>
+
+<h2 id="with">with</h2>
+
+<p>with은 객체안의 속성을 여러개 불러올때 복잡한 코드를 짧게 줄이는 방법으로,</p>
+
+<p>ex) with(객체){<br />
+ 속성불러오기..<br />
+ }</p>
+
+<p>이런식으로, 객체.속성으로 불러올것을 그냥 속성으로 불러올수있다고 이해했다.</p>
+
+<p>특히 with에서 객체 선언시, 불러올 객체의 속성과 외부 변수와 같은 이름이 있어 충돌이 일어나면<br />
+<b>with(객체){ } 에서 window.속성</b>으로 불러온다.</p>
+
+<ul>
+  <li>속성 추가는<br />
+동적일시 객체.속성=”값”;</li>
+  <li>동적으로 메소드 추가일시</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>객체.속성 = () =&gt; {} 이나
+ function(){}
+</code></pre></div></div>
+
+<p>으로 넣어주기.</p>
+
+<ul>
+  <li>속성 삭제는 delete (객체.속성);</li>
+</ul>
+:ET

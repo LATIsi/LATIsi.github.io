@@ -1,0 +1,32 @@
+<p>리엑트를 작업하면서 이미지를 넣는 과정에서 src폴더에 저장하고 css에서 backgroundImage 같은걸로 이미지를 따악 지정해서 보여주는 작업도 좋지만, <strong>사진이 있는 경로만을 객체 배열에 넣어 그걸 다시 한꺼번에 뿌려주는 작업</strong>을 하고싶은 나머지 이것저것 뒤져보는데</p>
+
+<h2 id="1-public-폴더에-저장해서-곧장-절대경로로-불러오기">1. public 폴더에 저장해서 곧장 절대경로로 불러오기</h2>
+
+<h2 id="2-src-폴더에-저장해서-import로-하나씩-불러오기">2. src 폴더에 저장해서 import로 하나씩 불러오기</h2>
+
+<p>이 두개밖에,,,,없다,,, (일단 내가 찾아본 바로는!?)<br />
+심지어 두번째에서 경악했다<br />
+아니 이게 무슨 import로 하나하나씩 불러와야해!?<br />
+안돼진짜참을수없어 줄도 길어지잖아!!!!!!! 한꺼번에 가져와서 뿌리는게 얼마나 짜릿한데!!!!!!!!!!1???</p>
+
+<p>그래서 1번으로 편하게 img의 src에 경로를 담은 변수를 넣어 촤라라ㅏ락 이미지를 가져오려는데…<br />
+분명 제대로 경로를 넣었는데 제대로 뜨지않았다,</p>
+
+<p><img width="355" alt="image" src="https://user-images.githubusercontent.com/91597005/145197825-a2ac7a28-5172-45ec-aa47-85bae8281177.png" /></p>
+
+<p>찾아보니.. 그냥 곧장 절대경로로 가져올수있던게 이제는 바뀌었다고 한다.<br />
+img의 src 경로에 process.env.PUBLIC_URL+이미지 경로 가 추가되어야 한단다..!!</p>
+
+<p>ex)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;img className="ProjectItem_img" alt={alt} src={ process.env.PUBLIC_URL+img}/&gt;
+</code></pre></div></div>
+
+<p>img는 물론 윗 컴포넌트에서 이미지경로를 받아와서 변수로 뿌려준거다.<br />
+ 다행히 이제야 제대로 떴다!</p>
+
+<p><img width="362" alt="image" src="https://user-images.githubusercontent.com/91597005/145197722-3aad1ad9-b0c4-4332-ac96-d6d342824654.png" /></p>
+
+<p>서치하다가 https://think0wise.tistory.com/21 을 참고하여 많이 도움을 받았습니다. (짱!)</p>
+
+<p>역시 이미지는 많이 사용할터이니 좀 더 조사해보고 내용을 추가하겠습니다!</p>

@@ -1,0 +1,45 @@
+I"<p>https://www.youtube.com/watch?v=DtLhiMxgsm0 의 코로나 리엑트 클론코딩중에 나온 오류</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Cannot read properties of undefined (reading 'map')
+setDatasets
+
+C:경로/react_corona/src/utils.ts:46
+
+  43 |   currentData: ChartData&lt;TType, TData, TLabel&gt;,
+  44 |   nextDatasets: ChartDataset&lt;TType, TData&gt;[]
+  45 | ) {
+&gt; 46 |   currentData.datasets = nextDatasets.map(nextDataset =&gt; {
+  47 |     // given the new set, find it's current match
+  48 |     const currentDataset = currentData.datasets.find(
+  49 |       dataset =&gt;
+View compiled
+</code></pre></div></div>
+
+<p>,,,, 어떻게 이런오류가?<br />
+내가 만든 파일중에 수정하라는게 없는데 만지지도 않은 utils에서 오류가 나면 어떻게 해결해야하는건데ㅜㅜ??<br />
+하지만 오류들을 쫒아가보니</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(anonymous function)
+C:경로/react_corona/src/chart.tsx:91
+
+  88 | }, [redraw, options, data.labels, data.datasets]);
+  89 |
+  90 | useEffect(() =&gt; {
+&gt; 91 |   renderChart();
+     | ^  92 |
+  93 |   return () =&gt; destroyChart();
+  94 | }, []);
+View compiled
+</code></pre></div></div>
+
+<p>에서, chart 문서가 오류인걸 발견하고<br />
+아예 react-chartjs-2 와 chart.js 의 메뉴얼을 살펴보았다.</p>
+
+<p>그러던중<br />
+<strong>npm install –save chart.js@^2.9.4 react-chartjs-2@^2.11.2</strong><br />
+으로 서로 버전을 맞춰주라는것을 발견!<br />
+알고보니 react-chartjs-2 는 벌써 4v 까지 업데이트를 했더라..</p>
+
+<p>수정하니 react-chartjs-2, chart.js의 map관련 오류는 수정완료!</p>
+:ET

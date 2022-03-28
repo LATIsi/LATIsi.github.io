@@ -1,0 +1,178 @@
+<p>SPA(single page Application)는 한개의 페이지로 이루어진 어플리케이션이다.</p>
+
+<p>서버에서 사용자에게 제공하는 페이지는 하나지만, 해당 페이지에서 주소상태에 따라 다양한 화면을 보여줄 수 있다. (라우팅)</p>
+
+<p>브라우저의 API를 사용하여 관리하거나 라이브러리를 사용하여 라우팅을 쉽게 구현할수있다.</p>
+
+<p>단점으로는</p>
+
+<ol>
+  <li>앱의 규모가 커지면 JS파일이 너무 커진다는것</li>
+  <li>JS를 실행하지않는 크롤러가 페이지의 정보를 제대로 수집해가지 못한다. (검색유입이 어려워진다.)</li>
+</ol>
+
+<p>1은 코드 스플리팅으로 사용하여 라우트별로 파일을 나누면 괜찮고,
+2는 서버사이드렌더링(SSR)으로 해결할 수 있다.</p>
+
+<p>SPA를 개발하기위한 라우팅을 지원하는 라이브러리로는 <code class="language-plaintext highlighter-rouge">react-router reach-router, next.js</code>등등의 라이브러리가 있다.</p>
+
+<hr />
+
+<h2 id="router-적용하기">Router 적용하기</h2>
+
+<p>router를 설치시, react-router-dom이라는 라이브러리를 설치하면 된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.js에서 적용해 컴포넌트를 BrowserRouter로 감싸주기.
+
+import {BrowserRouter} from 'react-router-dom';
+
+......
+
+&lt;BrowserRouter&gt;
+&lt;App /&gt;
+&lt;/BrowserRouter&gt;
+
+</code></pre></div></div>
+
+<p>이런식으로, 감싸서 적용해준다.</p>
+
+<p>Router는 페이지 컴포넌트가 준비됐다면 <code class="language-plaintext highlighter-rouge">Route라는 컴포넌트로 특정주소에따라 컴포넌트를 연결</code>해줄수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div&gt;
+&lt;Route path="/" component={home} exact={true}/ &gt;
+&lt;Route path="/page1" component={page1} / &gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>이런식으로, path와 component를 연결해준다.<br />
+<code class="language-plaintext highlighter-rouge">exact</code>는 경로값이 정확히 일치할때만 렌더링하게!<br />
+즉, 위의 예시의 / 경로에 <code class="language-plaintext highlighter-rouge">exact</code>를 넣지않는다면, /page1 에서도 /인 home 컴포넌트가 나오게 되어버린다.</p>
+
+<p>특히, 많은 route중에서도 맨 처음 화면을 뭐로 지정해줄것인지에 대해서도 설정하기위해 <code class="language-plaintext highlighter-rouge">첫번째로 매칭되는 path 를 가진 컴포넌트를 렌더링 하는 switch</code> 와 <code class="language-plaintext highlighter-rouge">exact path</code>를 많이쓴다.</p>
+
+<p>또는 route 하나에 여러개의 path를 설정하는 방법도 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div&gt;
+    &lt;Route path={['/page1','/about']}  component={about}/&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>이렇게 설정시, /page1, /about의 주소에서는 about의 컴포넌트를 볼수있다.</p>
+
+<h2 id="link">Link</h2>
+
+<p>Link는</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Link to ="경로"&gt; 내용 &lt;/Link&gt;
+</code></pre></div></div>
+
+<p>으로 선언한다.</p>
+
+<p>페이지를 전환하는 과정에서 페이지를 새로 불러 렌더링을 하기 때문에, 들고있던 상태를 모두 날려버리니 주의.</p>
+
+<h2 id="url">URL</h2>
+
+<p>유동적인 값을 보내야할때</p>
+
+<ol>
+  <li>쿼리</li>
+  <li>파라미터</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 - &gt; /page1/mainpage
+
+2 - &gt; /page2?option=true
+</code></pre></div></div>
+
+<p>이런식으로 값을 보낸다.
+1은 특정 아이디, 이름으로 조회 시<br />
+2는 키워드 검색이나 옵션 전달 시 사용.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const profile = ({match}) =&gt; {
+    const {username} = match.params;
+    if(!profile){
+        return &lt;div&gt;존재하지 않는다!&lt;/div&gt;
+    }
+    return (
+        &lt;div&gt;
+            &lt;h3&gt;{username}({profile.name})&lt;/h3&gt;
+            &lt;p&gt;{profile.description}&lt;/p&gt;
+        &lt;/div&gt;
+    )
+}
+</code></pre></div></div>
+
+<p>이런식으로, 링크 뒤의 파라미터를 match.params로 받아와 거기에 맞게 return해주는 방법으로 URL 파라미터를 사용할수있게 하는 방법이다.</p>
+
+<hr />
+
+<h2 id="url-쿼리">URL 쿼리</h2>
+
+<p>URL의 쿼리는 <code class="language-plaintext highlighter-rouge">Location 객체에 들어있는 search값</code>에서 조회할수 있음.</p>
+
+<p>쿼리문자열을 객체로 변환시 qs라는 라이브러리를 사용한다.</p>
+
+<p>그러므로 location.search를 parse로 가져와 qs 라이브러리로 객체로 변환한뒤 const 변수에 저장한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const query = qs.parse(location.search,{
+    ignoreQueryPrefix: ture
+});
+
+ -&gt; 쿼리문의 http://www...about?detail=true의 ?를 생략하는게 ignoreQueryPrefix 이다.
+
+const showDetail = query.detail === "true";
+ -&gt; 쿼리 URL이 http://www...about?detail=true에서 detail이 true이면 showDetail에 값을 담는걸 실행하기.
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="서브라우트">서브라우트</h1>
+
+<p>라우트를 사용하는 컴포넌트 내부 안에 또 다른 라우트 컴포넌트를 정의하는것!</p>
+
+<h1 id="라우터-부가기능">라우터 부가기능</h1>
+
+<p>path와 url이 매칭된 정보가 담겨있는 match,<br />
+현재 페이지의 정보가 담겨있는 (쿼리가 담겨있는 search나 hash라던지…) location 과 또 다른 부가기능 4개가 더 있다.</p>
+
+<ul>
+  <li>history</li>
+  <li>withRouter</li>
+  <li>Switch</li>
+  <li>NavLink</li>
+</ul>
+
+<h1 id="history">history</h1>
+
+<p>여태까지 이동한 url의 형태가 담겨있다!<br />
+전에 무슨 페이지로 이동했었는지같은 정보가 있기에</p>
+
+<ul>
+  <li>뒤로가기 버튼</li>
+  <li>로그인후 화면 전환이나</li>
+  <li>다른페이지로 이탈을 방지 시<br />
+활용한다.</li>
+</ul>
+
+<h1 id="withrouter">withRouter</h1>
+
+<p>자주 반복하는 코드를 재사용으로 만드는 고차 컴포넌트 HOC(higher-order-Component)이다.<br />
+라우트로 사용된 컴포넌트가 아니어도 match, location, history객체 접근 할 수 있다!</p>
+
+<p>https://velopert.com/3537 아주 유용한 정보이길래 책갈피 느낌으로,,<br />
+꼭 정독하기!… 짱!ㅜㅜ</p>
+
+<h1 id="switch">Switch</h1>
+
+<p>여러 라우트들을 감싸서 그중 일치하는 단 하나의 라우트만! <b>라우트 만!!!!!!!!!!!!!</b> 렌더링 시켜준다!!
+not found 홈페이지도 구현할수있당.<br />
+= path를 따로 정의하지않을시, 모든상황에 렌더링되는것을 주의.</p>
+
+<h1 id="navlink">NavLink</h1>
+
+<p>Link와 비슷하지만….<br />
+현재경로와 Link경로가 일치시 특정 스타일/CSS를 적용할수 있다.</p>
+
+<p>NavLink에서 링크가 활성화 될때 스타일 적용하려면</p>
+
+<p>activeStyle , activeClassName 속성에 스타일을 넣어주면 된다.</p>

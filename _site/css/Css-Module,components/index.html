@@ -1,0 +1,153 @@
+<h2 id="css-module">Css Module</h2>
+
+<p>컴포넌트 스타일 클래스 이름이 중첩되는 현상을 방지해주는 기술.<br />
+클래스 이름을 지을때 고유성에 대해 고민하지 않아됨. =&gt; 직접 불러온 컴포넌트 내부에서만 작동하기 때문.</p>
+
+<p>` 파일이름_클래스이름_해시값`
+형태로 이름을 자동으로 만들어 줌.</p>
+
+<p><code class="language-plaintext highlighter-rouge">파일명.module.css</code> 파일을 저장하면 적용된다.<br />
+전역적으로 사용되는 경우에는 :global을 적용.</p>
+
+<p>// 일반 .css나 .scss에서도 :local을 사용하여 Css Module 사용가능.</p>
+
+<p>JSX에서 엘리먼트에 고유한 클래스이름을 사용하고싶다면, import로 <code class="language-plaintext highlighter-rouge">파일명.module.css</code> 를 불러와 <code class="language-plaintext highlighter-rouge">classname={styles.[클래스이름]}</code>로 지정해주면 된다.</p>
+
+<p>아니면 여러개의 클래스 이름을 적용할 시,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>className={[style.css지정이름 , style.css지정이름].join('')}
+</code></pre></div></div>
+
+<p>*또는, 화살표함수를 사용할시,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>className={`${style.css지정이름} ${style.css지정이름}`}
+</code></pre></div></div>
+
+<p>로 지정해줄 수 있다.</p>
+
+<hr />
+
+<h2 id="classname">className</h2>
+
+<p>라이브러리 설치뒤 사용하는데, <code class="language-plaintext highlighter-rouge">클래스를 여러 개 설정하거나 조건부로 클래스 설정시</code> css-Module과 함께 사용시 편하다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import classNames from 'classnames';
+
+className('one', 'two') ;
+ =&gt; one two
+
+className('one', { two: true });
+ =&gt; one two
+
+className('one', { two: false });
+ =&gt; one
+
+className('one', [ 'two' , 'three' ]);
+ =&gt; one two three
+
+const myClass = 'hi';
+className('one', myClass, {myClassto : true});
+ =&gt; one hi myClassto
+
+</code></pre></div></div>
+
+<p>className에는 .bind를 사용할수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import classNames from 'classNames/bind'
+
+const ca = classNames.bind(styles);
+=&gt; bind로 styles에서 클래스를 미리 받아온뒤
+
+....
+
+&lt;div className={ca('a1','a2')}&gt;
+&lt;/div&gt;
+
+classnames={styles.[클래스이름]} 으로 안해도 된다.
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="style-components">Style-components</h2>
+
+<p>외부파일을 만들지 않고, JS안에 스타일을 선언하는 방식.<br />
+라이브러리를 install 해야하며 import를 해주어야한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import styled from 'styled-components';
+
+const a1 =sytled.적용할 태그`
+    background:red;
+`;
+</code></pre></div></div>
+
+<p>이런식으로 사용할 수 있다.</p>
+
+<p>또한 styled-components은 <code class="language-plaintext highlighter-rouge">JSX파일의 props를 사용해</code> 스타일을 변형시킬수도 있다.</p>
+
+<p>예시로,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const a2 =sytled.div`
+    background:${props =&gt; props.color};
+`;
+</code></pre></div></div>
+
+<p>이런식으로 props를 받아와 스타일을 적용하거나</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const a2 =sytled.div`
+    background:${props =&gt; props.color};
+
+    ${props =&gt;
+    props.inverted &amp;&amp;
+    css'
+        background: none;
+
+        &amp;: hover {
+            background:white;
+        }
+    '};
+
+`;
+</code></pre></div></div>
+
+<p>이런식으로 props의 값에 따라 조건부 스타일링을 할 수도 있다.<br />
+중간처럼 css가 들어가는 경우, <code class="language-plaintext highlighter-rouge">import에 styled말고도 {css} 를 넣어주어야 한다.</code><br />
+또한 리엑트로 css를 처리하기 귀찮은 hover같은 기능도 손쉽게 처리할수있어서 활용도가 좋다.</p>
+
+<h2 id="중요한-점">중요한 점.</h2>
+
+<p>@media (max-width: 필요한 px){
+바뀌는 css
+}</p>
+
+<p>의 조절도 할 수 있다.</p>
+
+<p>media를 한번 선언한뒤 함수처럼 사용해주면 더 편하다.</p>
+
+<p>ex)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import styled, {css} from 'styled-compoents';
+
+const sizes ={
+    desktop : 1024,
+    tablet : 768
+};
+
+const media = Object.keys(sizes).reduce((acc,label)=&gt;{
+    acc[label] =(...args) =&gt; css`
+        @media (max-width : ${sizes[label]/16}em){
+            ${css(...args)};
+        }
+    `;
+
+    return acc;
+},{});
+
+const box = styled.div`
+    ${media.desktop`width:768px;`};
+    ${media.tablet`width:100%;`};
+`;
+
+</code></pre></div></div>
+
+<p>이런식으로 활용할수 있다.</p>

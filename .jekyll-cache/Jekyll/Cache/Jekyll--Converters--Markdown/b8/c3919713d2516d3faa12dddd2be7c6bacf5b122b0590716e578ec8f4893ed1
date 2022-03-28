@@ -1,0 +1,82 @@
+I"�
+<h1 id="callback">CALLBACK</h1>
+
+<p>JS는 실행순서가 보장되지 않는다. (비동기)<br />
+그래서 콜백은 부르면 타이밍맞춰 오는 함수로, 실행순서를 보장한다. (동기)</p>
+
+<p>단점으로는</p>
+
+<ul>
+  <li>가독성 저하</li>
+  <li>예외처리 불편</li>
+</ul>
+
+<p>등등이 있으며,</p>
+
+<p>해결방법으로는 3가지가 있다.</p>
+
+<ol>
+  <li>화살표 함수 (간결하게 보인다.)</li>
+  <li>
+    <p>promise<br />
+<code class="language-plaintext highlighter-rouge">promise 이름 = new promise((resolve, reject) =&gt;{ resolve(); reject(); });</code></p>
+
+    <p>여기서 resolve는 약속을 지켰을때의 호출이고<br />
+reject는 약속을 실패했을때의 호출이다.</p>
+
+    <p>promise가 성공시, .then(()=&gt;{})또는 .catch(){}로 처리한다(리엑트).<br />
+특히, resolve()나 reject() 안에 인자를 넣으면. .then() 에 인자를 넣어 사용할수 있게되었다.</p>
+  </li>
+  <li>
+    <p>Asyne-await<br />
+외부정보를 가지고올때 많이 사용한다. 예외처리도 같이 사용하고 있다.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>asyne function 함수이름 (...) {
+const 객체이름 = await asyncfuntion()
+}
+</code></pre></div>    </div>
+
+    <p>이로써, 순차적, 동기적 실행처럼 보이는것이다.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h1 id="구조분해할당-비구조화-파괴">구조분해할당 (비구조화, 파괴)</h1>
+
+<p>인덱스와 키를 기준으로 값을 빼내는 것<br />
+구조분해할당은 api를 가져올시 위주로 사용하며,</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const test = { a:'값', b:'값2', c:'값3'};
+const { a, b, c } = test;
+</code></pre></div></div>
+
+<p>변수를 키 값으로 한번에 선언이 가능</p>
+
+<p><br /></p>
+
+<p>위의 a, b, c를 새로운 이름으로 키를 지정하고 싶을시</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const { a:aa, b:bb, c:cc } = test;
+</code></pre></div></div>
+
+<p>로 선언 가능.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>또한 중첩된 객체로 가져올시…</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const { a:aa, price:{won}, acount:{total : 새로운 이름} } = test;
+</code></pre></div></div>
+
+<p>위와같이 price같은경우 가져오는 객체 won대로 이름을 won으로 가져올 때이고<br />
+total같은 경우 새로운 이름으로 지정시켜줄 시 적용가능.</p>
+:ET

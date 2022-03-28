@@ -1,0 +1,16 @@
+<h2 id="for---in">for - in</h2>
+
+<ul>
+  <li>객체의 속성을 반복하여 작업을 수행한다.</li>
+  <li>객체의 key 값에만 접근할수 있고, value값에는 접근하지 못한다.</li>
+  <li>객체의 모든 열거 가능한 속성에 대해 반복</li>
+</ul>
+
+<h2 id="for---of">for - of</h2>
+
+<ul>
+  <li>사용하기 위해서는 컬렉션 객체가 [Symbol.iterator] 속성을 가지고 있어야 함.</li>
+</ul>
+
+<p>JS의 객체 속성은 내부적으로 숨겨진 속성이 있는데, 그중 하나가 <code class="language-plaintext highlighter-rouge">Enumerable(열거자)</code> 또는 <code class="language-plaintext highlighter-rouge">NoEnumerable(비열거자)</code>으로 정의할 수 있다.
+for in 구문은 Enumerable이 true로 되어 속성만 반복. (열거형 속성, false인 것들은 반복하지않음.)</p>

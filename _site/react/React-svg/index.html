@@ -1,0 +1,53 @@
+<p>React-icon 관련해서 어떻게 객체 배열에 넣나 생각하고있었다…<br />
+왜냐! 컴포넌트같이 react-icon은 <icon이름></icon이름> 이렇게 불러오니까,,, 객체 배열에 넣을수있나?! 싶었었다.</p>
+
+<hr />
+
+<p>일단 icon 파일명인 svg 파일에 대해 조사를 해봤다.</p>
+
+<p>스케일러블 벡터 그래픽스(Scalable Vector Graphics, SVG)는 2차원 벡터 그래픽을 표현하기 위한 XML 기반의 파일 형식으로, 1999년 W3C(World Wide Web Consortium)의 주도하에 개발된 오픈 표준의 벡터 그래픽 파일 형식이다.<br />
+출처 :https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%9F%AC%EB%B8%94<em>%EB%B2%A1%ED%84%B0</em>%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4</p>
+
+<p>즉,,, 쉽게 말하자면 svg는 사이즈가 이상하면 깨질수도 있는 비트맵이 아닌 백터파일(화질이 안깨지는 그래픽 파일)이라는것이다!</p>
+
+<hr />
+
+<p>그런 svg파일을 불러오고 싶을때는,</p>
+
+<ol>
+  <li>
+    <p><strong>src에 이용하기 위해 import로 가져온다.</strong><br />
+import svg변수이름 from ‘경로/이름.svg’</p>
+  </li>
+  <li>
+    <p><strong>컴포넌트 형식으로 불러온다.</strong><br />
+import { ReactComponent as 컴포넌트로 불러올 이름 } from ‘경로/이름.svg’;</p>
+  </li>
+</ol>
+
+<p>…인데, react-icon 라이브러리를 활용해 간단히 내가 원하는 아이콘을 가져올수도 있다.<br />
+객체 배열에 어떻게 뿌려서 한꺼번에 가져오지? 해서 이것저것 코드를 시도해보니 성공한게 있었다!</p>
+
+<p><img src="https://user-images.githubusercontent.com/91597005/146366356-7e47c618-8126-4620-8d2c-a240190658fc.png" alt="image" /></p>
+
+<p>이런식으로 react-icon 라이브러리에서 원하는 아이콘을 전부 가져와</p>
+
+<p><img width="198" alt="image" src="https://user-images.githubusercontent.com/91597005/146366504-2504d396-e4a7-4dbc-ac02-635fbd1d1c85.png" /></p>
+
+<p>2 형식과 같게 컴포넌트 형식으로 불러와 객체 배열에 넣으면 물론 받는쪽에서 손쉽게 사이즈나 색을 바꿀수있다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/91597005/146366662-757686eb-12e4-4245-ba09-3af836a75f0b.png" alt="image" /></p>
+
+<p>이렇게 보듯 react-icon을 담은 변수가 img이고, styled-components 라이브러리도 같이 사용한다면 손쉽게 css로 hover의 색을 바꿀수가 있다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/91597005/146366886-9e05496e-0645-418a-94f7-1f5b997491c0.png" alt="image" /></p>
+
+<p>styled-components 으로 hover시 받아온 색으로 바꿔준다.<br />
+이런 처리를 통해 react-icon을 한꺼번에 뿌려주고, 배정된 색도 간단히 처리할 수 있었다.</p>
+
+<hr />
+
+<p><img src="https://user-images.githubusercontent.com/91597005/146367689-81b75540-44b9-4ccc-8d55-ca488382dd47.gif" alt="1" /></p>
+
+<p>이렇게 제대로 icon도 뜨고 hover시 색도 잘 바뀐다.<br />
+결론적으로, react-icond은 객체 배열에 컴포넌트형식으로 넣어도 멀쩡히 하위컴포넌트에서 불러올수있었다.</p>

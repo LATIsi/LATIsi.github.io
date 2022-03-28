@@ -1,0 +1,106 @@
+I"�<ul>
+  <li>추후 추가되는 글입니다.</li>
+</ul>
+
+<p>내가 만들던 프로젝트나 공부용 파일들을 백업하는김에 이것저것 뒤져보다<br />
+최근에서야 실무에서도 많이쓰이는 git을 알고 사용하기로 결정!</p>
+
+<p>그런데… 팀 프로젝트를 했을적에는 git의 정체도 몰랐었다!(!!!!!)<br />
+서로 카톡으로 프로젝트의 파일을 수정하며 결합했다가 그럼에도 오류났을때 비명을 질렀던 기억이 난다..<br />
+지금이라도 익숙해지자 싶어 공부를 시작하고야 말았는데!</p>
+
+<p>나 자신을 위한 git 명령어를 노션에 정리해두었지만<br />
+이제 블로그에 차근차근 업데이트를 할 생각이다.</p>
+
+<h1 id="처음의-git">처음의 git</h1>
+
+<p>깃 배쉬에서 맨 처음 해줘야하는것</p>
+
+<p><strong>git config –global user.name “유저 이름”<br />
+git config –global user.email “가입할 때 사용한 메일 주소”<br />
+git status</strong><br />
+저장소의 상태확인<br />
+현재 브랜치의 이름과 추가, 변경된 파일과 디렉토리 목록 표시</p>
+
+<hr />
+
+<p><strong>git init</strong></p>
+
+<p>프로젝트에 git 추가하는것. (현재 디렉토리를 git저장소로 변환)</p>
+
+<hr />
+
+<p><strong>git add  파일이름</strong></p>
+
+<p>파일 원격 저장소 추가 ( 깃 저장소 스냅샷)</p>
+
+<p>git add . 로 전부 저장가능</p>
+
+<hr />
+
+<p><strong>git commit  -m 커밋시 남길 메시지</strong></p>
+
+<p>디렉토리의 변경/추가를 git 웹 저장소에 기록</p>
+
+<p>git commit -am 설명      /        add와 커밋까지 같이 해줌</p>
+
+<hr />
+
+<p><strong>git push 로컬저장소링크 브랜치이름 (git push origin master)</strong></p>
+
+<p>프로젝트에 git 추가하는것. (현재 디렉토리를 git저장소로 변환)</p>
+
+<hr />
+
+<p><strong>git clone 저장소 주소</strong></p>
+
+<p>현재 위치하고있지 않은 저장소로 갈아끼우는느낌 (체크아웃) 
+저장소의 내용을 다운로드받고 자동으로 init도 됨</p>
+
+<p>** git clone 경로 . **<br />
+현재 폴더에 소스를 바로 받아옴</p>
+
+<p>git log로 버전 확인하고
+** git reset –hard 버전 **
+이전 버전 돌아가기</p>
+
+<hr />
+
+<p><strong>git checkout 브랜치 이름</strong></p>
+
+<p>로컬 저장소의 브랜치를 전환  (체크아웃)</p>
+
+<hr />
+
+<p><strong>git merge</strong></p>
+
+<p>브랜치에서 하던 작업을 끝내고 동료가 볼수있는 master 브랜치로 합치는 과정.</p>
+
+<hr />
+
+<p><strong>git pull</strong></p>
+
+<p>로컬저장소 작업시 저장소의 최신버전을 받아옴
+<strong>git pull origin master</strong> 하면 origin의 내용이 master로 복사됨.</p>
+
+<hr />
+
+<p><strong>git remote</strong></p>
+
+<p>원격 저장소를 관리할수있는 명령어</p>
+
+<p><strong>git remote add origin https://github.com/링크</strong>
+origin이라는 이름으로 원격저장소 주소 등록</p>
+
+<p><strong>git remote remove origin</strong>
+origin이라는 이름의 <em>**</em>원격저장소 지우기</p>
+
+<p><strong>git remote -v</strong></p>
+
+<p>현재 링크가 어디로 되있는지 확인 (fetch와 push)</p>
+
+<hr />
+
+<p><strong>git branch -m old_branch new_branchgit</strong><br />
+깃 브랜치 이름 바꾸기.</p>
+:ET
