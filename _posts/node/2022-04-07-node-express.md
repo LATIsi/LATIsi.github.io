@@ -1,13 +1,14 @@
 ---
-title: "React - node.js 와 express"
-excerpt: "공부를 하며 node.js 와 express에 대한 정리"
-date: 2022-03-13
+title: "node.js - 라이브러리인 express, express-generator"
+excerpt: "공부하던 기본지식"
+date: 2022-04-07
 categories:
-  - React
+  - node
 tags:
-  - React
-  - node.js
-last_modified_at: 2022-03-14
+  - library
+  - express
+  - express-generator
+last_modified_at: 2022-04-07
 ---
 
 node.js  
