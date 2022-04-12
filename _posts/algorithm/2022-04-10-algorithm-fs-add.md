@@ -63,12 +63,12 @@ JS에서 특히 계산에서는 parseInt 나 Number로 문자를 <u>숫자로 �
 
 1000는 덧셈(+), 1001는 뺄셈(-), 10998는 곱하기(\*), 1008는 나누기(/). 10869는 사칙연산이다.
 
-특히 10869같은경우...
+특히 10869번 문제 같은경우...
 
 ```
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().split(' ');
-const a =parseInt(input[0]);
+const a = parseInt(input[0]);
 const b = parseInt(input[1]);
 console.log(`${a+b}
 ${a-b}
