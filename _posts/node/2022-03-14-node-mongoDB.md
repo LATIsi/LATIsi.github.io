@@ -1,6 +1,6 @@
 ---
 title: "MongoDB와 mongoose에 대하여 "
-excerpt: " toy 프로젝트 온라인 메모장을 만들며 배웠던것과 nosql "
+excerpt: " 관계형 DB와 nosql "
 date: 2022-03-13
 categories:
   - node.js
@@ -54,7 +54,7 @@ sql질의문에 의해 DB를 update, select, 저장 하도록 구성된 관계�
 
 mongoDB 문법.
 
-# Collection(Table) crate문
+## Collection(Table) crate문
 
 ```
 db.createCollection("mycoll");
@@ -62,7 +62,7 @@ db.createCollection("mycoll");
 
 <br>
 
-# Insert 문
+## Insert 문
 
 ```
 db.users.insert({a:3,b:5})
@@ -70,7 +70,7 @@ db.users.insert({a:3,b:5})
 
 <br>
 
-# Select 문
+## Select 문
 
 ```
 db.users.find()
@@ -78,7 +78,7 @@ db.users.find()
 
 <br>
 
-# Select + Where 문
+## Select + Where 문
 
 ```
 db.users.find({age:20},{a:1,b:1})
@@ -86,7 +86,7 @@ db.users.find({age:20},{a:1,b:1})
 
 <br>
 
-# Select +where + order by문
+## Select +where + order by문
 
 ```
 db.users.find({age:20}).sort({name:1})
@@ -94,7 +94,7 @@ db.users.find({age:20}).sort({name:1})
 
 <br>
 
-## mongoose
+# mongoose
 
 mongoDB는 JS로 만들지 않았기에, node.js를 연결시켜주는 어댑터가 필요해서 나온것이 바로 mongoose 드라이버 라이브러리이다.  
 기존의 관계형 데이터베이스가 익숙한 사람들이 쓰기 편하다.

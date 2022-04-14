@@ -90,7 +90,3 @@ parseDouble("문자열");
 그 외의 업캐스팅, 다운캐스팅에 대하여..
 
 [참고링크 - 여니의 개발 다반사](https://developer-yeony.tistory.com/102?category=942554)
-
-```
-
-```
