@@ -120,5 +120,19 @@ padding- top/bottom/right/left를 지정할 수 있다.
 | -------------- | :-----------------------------------: |
 | `contents-box` | 컨텐츠 영역을 기준으로 크기를 정한다. |
 | `border-box`   |      테두리를 기준으로 크기정함       |
-| `initial`      |            기본값으로 설정            |
+| `initial`      |    속성의 초깃값으로 설정. 초기화     |
 | `inherit`      |      부모 요소의 속성값 상속받기      |
+
+contents-box는 width와 height가 컨텐츠너비, 높이의 영역까지만 포함한다.  
+border-box는 width와 height가 안쪽 여백 - 컨텐츠, 패딩과 border가 포함된다.
+
+`같은 350px의 넓이를 가진, 10px의 border를 가진 요소`가 있을때
+
+<br>
+
+Box-sizing : contents-box는 border를 350px안에 포함을 안하니 왼쪽, 오른쪽 border를 생각해 합하면 370px
+
+<br>
+
+하지만 Box-sizing : border-box는 border가 350px안에 포함을 한 상태로 취급해서 좌 우 10px씩 border가 들어가고  
+ 원래 가지고있던 내부요소는 330px, 좌 우 border 10px씩 해서 350px이 딱 맞는다.
