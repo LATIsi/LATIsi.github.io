@@ -20,7 +20,7 @@ position이 무슨 속성이냐에 따라, 상하좌우(left, top, right, bottom
 | `static`      |                                              `기본값`, 좌표 상하좌우(left, top, right, bottom) 속성 사용 못한다.                                               |
 | `relative`    |                        `상대위치`. 기본위치(원래 static이 있는 자리)를 기준으로 <Br> 좌표 상하좌우(left, top, right, bottom) 이동 가능.                        |
 | `absolute`    | `절대위치`. 부모/조상요소가 `relative,absolute,fixed`로 선언된 position을 기준으로 <Br> 부모나 조상이 없다면 body가 기준. 상하좌우값이 `안쪽`으로 적용이 된다. |
-| `fixed`       |                                                                스크롤을해도 고정으로 따라온다.                                                                 |
+| `fixed`       |                                           요소가 아니라 브라우저 기준으로 적용되며, 스크롤을해도 고정으로 따라온다.                                            |
 
 <Br>
 
