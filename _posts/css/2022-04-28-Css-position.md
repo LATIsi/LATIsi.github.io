@@ -26,6 +26,8 @@ position이 무슨 속성이냐에 따라, 상하좌우(left, top, right, bottom
 
 <Br>
 
+absolute같은 경우, 상하좌우가 전부 0이면 부모의 크기에 맞게 전부 채워지는 효과가 있다.
+
 <Br>
 
 # z-index

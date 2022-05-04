@@ -103,10 +103,18 @@ border와 밖의 요소사이의 간격
 background-color의 영향을 받지않으며 padding과 같게 한줄 축약도 가능.  
 padding- top/bottom/right/left를 지정할 수 있다.
 
-특히, margin에 auto값을 사용하면 온쪽, 오른쪽 마진을 자동으로 설정하여 부모 요소의 정중앙에 위치하게 된다.
+특히, margin에 auto값을 사용하면 왼쪽, 오른쪽 마진을 자동으로 설정하여 부모 요소의 정중앙에 위치하게 된다.  
+auto - 그 영역에서 모두 취하겠다는 뜻. 마진, 패딩을 포함한채로 부모크기만큼 꽉찬다.
 
 `margin : auto ` - 부모요소의 상하좌우 정중앙 위치.  
  `margin : 0 auto` - 부모요소의 가로 정가운데 위치. (많이 쓰인당~)
+
+<br>
+
+## 네거티브 마진
+
+margin-left margin-top은 `시작점`, margin-right margint-bottom 은 `끝나는 지점` 이라는 개념으로 보는데  
+네거티브 마진일 경우 그 지점이 빨리 오게된다.
 
 <br>
 <br>
