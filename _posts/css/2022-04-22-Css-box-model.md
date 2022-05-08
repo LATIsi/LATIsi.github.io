@@ -1,12 +1,13 @@
 ---
 title: "css Box model"
-excerpt: "box model인 Content 와 padding, Border, margin /  Box-sizing "
+excerpt: "box model인 Content 와 padding, Border, margin /  Box-sizing  / box-shadow"
 date: 2022-04-22
 categories:
   - CSS
 tags:
   - CSS
-last_modified_at: 2022-04-22
+  - box-model
+last_modified_at: 2022-05-06
 ---
 
 ## Box 모델
@@ -28,7 +29,9 @@ html의 레이아웃의 모든 요소는 상자(box)의 형태이다.
 
 ![image](https://user-images.githubusercontent.com/91597005/164678118-6d167215-7523-4b39-a408-c7561a237286.png)
 
-대충 그림판으로 삭삭 그리면 이렇게 된다.
+대충 그림판으로 삭삭 그리면 이렇게 된다.  
+박스모델 값을 한 줄로 지정시, `상우하좌`로 지정해주는데  
+적지않는경우 넓이는 `부모`만큼, 높이는 `자식`만큼을 차지한다.
 
 <br>
 <br>
@@ -144,3 +147,17 @@ Box-sizing : contents-box는 border를 350px안에 포함을 안하니 왼쪽, �
 
 하지만 Box-sizing : border-box는 border가 350px안에 포함을 한 상태로 취급해서 좌 우 10px씩 border가 들어가고  
  원래 가지고있던 내부요소는 330px, 좌 우 border 10px씩 해서 350px이 딱 맞는다.
+
+<br>
+
+<br>
+
+---
+
+<br>
+
+# box-shadow
+
+`box-shadow : 그림자 좌우 위치, 상하 위치, 흐려짐범위(px), 그림자크기(높이), 색상, inset(내부요소 표현)`
+
+필요한 값이 많다. `,`을 써서 여러개를 중첩하게 할수도 있다.

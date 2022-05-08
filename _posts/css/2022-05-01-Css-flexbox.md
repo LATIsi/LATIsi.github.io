@@ -209,6 +209,6 @@ flex : flex-grow flex-shrink flex-basis;
 
 글꼴의 기준선인 베이스라인을 기준으로 정렬  
 서로 다른 크기 글자에 적용시 아래 베이스라인을 기준으로 정렬한다.  
-align-item은 baseline숙성이 적용할수 없다. (수직 정렬이기에)
+align-item은 baseline 속성이 적용될수 없다. (수직 정렬이기에)
 
 <br>
