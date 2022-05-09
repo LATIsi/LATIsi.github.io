@@ -49,7 +49,7 @@ vertical-align 에서의 최상단과 하단은 line box을 참고한다!
 또는 수직, 수평으로 정 가운데에 정렬을 하고싶을시...
 
 `position: absolute;`  
-`left: 0; top: 0; transforom: translate(-50%, -50%);`  
+`left: 50%; top: 50%; transforom: translate(-50%, -50%);`  
 을 지정해둔다.
 
 <br>
