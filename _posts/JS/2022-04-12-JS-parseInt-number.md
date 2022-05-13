@@ -1,13 +1,13 @@
 ---
 title: "JS 문자열과 숫자의 형변환 캐스팅"
 excerpt: "그리고 ParseInt와 Number의 차이"
-date: 2021-11-20
+date: 2022-04-10
 categories:
   - JS
 tags:
   - JS
   - 형 변환
-last_modified_at: 2021-11-22
+last_modified_at: 2022-04-12
 ---
 
 JS에서도 형변환이 있다!
