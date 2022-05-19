@@ -1,12 +1,13 @@
 ---
 title: "JS 애니메이션 구현방법"
-excerpt: "CSS Transition, CSS Animations, JS Animations & Timer Function"
+excerpt: " & CSS Transition, CSS Animations, JS Animations & Timer Function"
 date: 2022-03-15
 categories:
   - JS
 tags:
   - JS
   - animation
+  - css
 last_modified_at: 2022-03-15
 ---
 

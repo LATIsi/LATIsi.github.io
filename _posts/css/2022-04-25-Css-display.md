@@ -8,7 +8,7 @@ tags:
   - CSS
   - display
   - vertical-align
-last_modified_at: 2022-04-25
+last_modified_at: 2022-05-19
 ---
 
 # display 속성이란?
@@ -22,7 +22,8 @@ display속성이란 화면에 요소가 보여지는 방식을 결정하는 속�
 | `block`        | 블록적용. 화면 전체의 가로폭을 전부 차지한다. (100%) 마진과 패딩을 사용할 수 있으며 <br> 큰 맥락등에 쓰이는데 예시로 `div, h1~h6, p, header, li, footer, section...`가 있다. |
 | `inLine`       |   인라인적용, `해당 범위만 감싸므로` 가로세로 지정을 못하며 마진,패딩의 top/bottom도 적용할수 없다. <br> 단어, 링크, 이미지등에 사용되며 예시로 `span, a, img` 등이 있다.    |
 | `inLine-block` |                                   인라인과 블록의 장점만을 포함! inLine의 높이를 조절할수있으며 마진과 패딩의 top/ bottom을 조절 할수있다.                                   |
-| `flex`         |                                                                           플렉스 컨테이너로 표시 -                                                                           |
+| `flex`         |                                                적용하는게 무엇이냐에 따라, 컨테이너(부모), 아이템(자식)으로 적용이 가능하다.                                                 |
+| `flow-root`    |                                                 root의 흐름(전체 창)대로 표현하라는 뜻. 요소의 시작점 위치를 변경할 수 있다.                                                 |
 
 <br>
 
@@ -42,6 +43,15 @@ display속성이란 화면에 요소가 보여지는 방식을 결정하는 속�
 으로 적용해주지만, 수직정렬시 `vertical-align : middle;`을 사용해준다.  
 vertical-align 에서의 최상단과 하단은 line box을 참고한다!
 
+<br>
+
+- ```
+  vertical-align이란?
+  베이스 라인이 부모에 맞춰 정렬되는것.
+  ```
+
+<br>
+
 또는 부모요소에서 자식요소를 수직 정렬시 `align-items: center;`을 사용.
 
 <br>
@@ -51,6 +61,33 @@ vertical-align 에서의 최상단과 하단은 line box을 참고한다!
 `position: absolute;`  
 `left: 50%; top: 50%; transforom: translate(-50%, -50%);`  
 을 지정해둔다.
+
+<br>
+
+---
+
+<br>
+
+## flex에 대하여
+
+부모요소와 자식요소에 넣음에 따라 달라진다.  
+부모요소에 flex를 넣을시, 아이템(자식)들은 `inline 요소처럼 가로방향으로 내용물의 width만큼 배치`되어 부모의 높이만큼 알아서 늘어난다.
+
+자세한것은 css flexbox글을 참고하기.
+
+<br>
+
+<br>
+
+---
+
+<br>
+
+## 참고한 홈페이지
+
+<br>
+
+### [ 이번에야말로 CSS Flex를 익혀보자- 1분코딩 ](https://studiomeal.com/archives/197)
 
 <br>
 
