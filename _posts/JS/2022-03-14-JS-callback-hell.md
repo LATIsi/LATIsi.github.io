@@ -26,13 +26,28 @@ JS는 실행순서가 보장되지 않는다. (비동기)
 
 1. 화살표 함수 (간결하게 보인다.)
 2. promise  
+    Promise 객체는
+
+   - `pending` / Promise 객체에 결과값이 안채워진 상태
+   - `fulfilled` / 채워진상태! (then이나 await 메소드를 사용해 실행!)
+   - `rejected` / Promise 객체에 결과값 채우다가 오류난 상태
+
+   의 상태를 가진다.
+
    `promise 이름 = new promise((resolve, reject) =>{ resolve(); reject(); });`
 
    여기서 resolve는 약속을 지켰을때의 호출이고  
-   reject는 약속을 실패했을때의 호출이다.
+    reject는 약속을 실패했을때의 호출이다.
 
-   promise가 성공시, .then(()=>{})또는 .catch(){}로 처리한다(리엑트).  
-   특히, resolve()나 reject() 안에 인자를 넣으면. .then() 에 인자를 넣어 사용할수 있게되었다.
+   promise가 성공시,
+
+   ```
+   .then( ( ) => { }) 또는 .catch( ){ }
+   ```
+
+   로 처리한다(리엑트).  
+    특히, `resolve()나 reject()` 안에 인자를 넣으면.  
+   `.then()` 에 인자를 넣어 사용할수 있게되었다.
 
 3. Asyne-await  
    외부정보를 가지고올때 많이 사용한다. 예외처리도 같이 사용하고 있다.
