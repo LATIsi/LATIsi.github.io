@@ -6,6 +6,8 @@ categories:
   - node.js
 tags:
   - node.js
+  - MongoDB
+  - mongoose
 last_modified_at: 2022-04-13
 ---
 
