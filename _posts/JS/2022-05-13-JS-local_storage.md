@@ -46,8 +46,12 @@ sessionStorage.속성(값);
 
 <br>
 
-JS값이나 객체를 json 문자열로 변환시키는(또한 값이 number 또는 boolean라면 그냥 그 데이터형태로 가져온다, 객체나 배열은... 문자열형태로 가져오므로 주의.) `JSON.stringify`를 사용하고  
-불러올때는 json을 분석하여 js값으로 불러오는 `JSON.parse`을 사용한다..
+JSON은 문자열간의 상호변환을 수행해주는 두개의 메서드를 제공한다.
+
+- json문자열을 JS객체로 변환하는 JSON.parse()
+- js객체를 json문자열로 변환하는 JSON.stringify()
+
+외부에서 문자열의 형태로 주어진데이터를 내장 데이터 타입(다루기 쉽게 바꾸는것)으로 변환하는 과정을 `deserialization (역직렬화)` 라고 부른다.
 
 <br>
 
@@ -58,3 +62,28 @@ JS값이나 객체를 json 문자열로 변환시키는(또한 값이 number 또
 <br>
 
 크롬을 기준으로, f12를 눌러 개발자 도구를 킨뒤 어플리케이션탭에서 storage들을 확인할 수 있다.
+
+---
+
+<br>
+
+### TIP!
+
+`JSON.stringify()` 를 사용하여 JS의 객체를 json 문자열로 변환하기! <br>
+
+` JSON.stringify`(`json 문자열로 변환할 값`,`함수/배열.`, `가독성을 위한 공백 삽입, 문자열이나 숫자가 값`)
+
+<br>
+또한 stringify()는  값이 number 또는 boolean라면 그냥 그 데이터형태로 가져온다, 객체나 배열은... 문자열형태로 가져오므로 주의.
+
+데이터가 많으면 3번쨰 인자의 공백삽입으로 `들여쓰기할 공백의 숫자를 입력가능`.
+
+<br>
+
+---
+
+<Br>
+
+### 참고한 링크와 블로그
+
+#### [https://www.daleseo.com/js-json/](https://www.daleseo.com/js-json/)

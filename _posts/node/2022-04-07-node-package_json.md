@@ -1,6 +1,6 @@
 ---
 title: "node.js - package.json에 대하여 "
-excerpt: "공부하던 기본지식"
+excerpt: "공부하던 기본지식과 시멘틱 버저닝 - Major.minor.patch에 대해."
 date: 2022-06-05
 categories:
   - node
